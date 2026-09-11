@@ -17,8 +17,22 @@ body {
   background: black;
   z-index: 9999999999999;
   opacity: 1;
+  transition: opacity 0.5s linear;
   text-align: center;
   font-size: 100px;
   flex-direction: column-reverse;
   justify-content: center;
-} 
+}
+
+#titleContainer {
+  position: absolute;
+  opacity: 1;
+}
+#titleBG {
+  position: absolute;
+  inset: 0;
+  width: 100vw;
+  height: auto;
+  pointer-events: none;
+  z-index: 100;
+}
