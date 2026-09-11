@@ -17,5 +17,8 @@ body {
   background: black;
   z-index: 9999999999999;
   opacity: 1;
-  font-size: 200px;
+  text-align: center;
+  font-size: 100px;
+  flex-direction: column-reverse;
+  justify-content: center;
 } 
