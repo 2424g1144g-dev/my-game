@@ -35,7 +35,7 @@ body {
 #title {
   position: absolute;
   left: 50vw;
-  top: 500px;
+  top: 50px;
   width: 400px;
   height: 10px;
   transform: translateX(-50%);
