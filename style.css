@@ -34,11 +34,25 @@ body {
 }
 #title {
   position: absolute;
-  display: flex;
+  left: 50vw;
+  top: 500px;
+  width: 400px;
+  height: 10px;
+  transform: translateX(-50%);
   text-align: center;
-  font-size: 70px;
-  color:burlywood;
+  font-family: title;
+  -webkit-text-stroke: black 2px;
+  font-size: 100px;
+  color: burlywood;
   z-index: 200;
+}
+#subTitle {
+  position: absolute;
+  left: 0;
+  top: 120px;
+  width: max-content;
+  font-size: 30px;
+  transform: translateX(-15%);
 }
 #titleBG {
   position: absolute;
