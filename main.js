@@ -14,10 +14,12 @@ function start() {
   const flash = document.getElementById("flash");
   const img = document.getElementById("titleTsukagoe");
   const menu = document.getElementById("titleMenu");
+  const title = document.getElementById("titleContainer");
   flash.classList.add("actionFlash");
   img.src = "assets/BG/titleTsukagoeGood.png";
   menu.style.display = "none";
   setTimeout(() => {
     flash.classList.remove("actionFlash");
+    title.style.opacity = 0;
   }, 500);
 }

@@ -49,6 +49,7 @@ body {
 #titleContainer {
   position: absolute;
   opacity: 1;
+  transition: opacity 1.5s linear;
 }
 #title {
   position: absolute;
