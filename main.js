@@ -12,7 +12,7 @@ window.addEventListener("keydown", (e) => {
   //タイトルの選択肢
 function start() {
   const flash = document.getElementById("flash");
-  const img = document.getElementByid("titleTsukagoe");
+  const img = document.getElementById("titleTsukagoe");
   flash.classList.add("actionFlash");
   img.src = "aseets/BG/titleTsukagoeGood.png";
   setTimeout(() => {
