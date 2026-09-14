@@ -237,7 +237,6 @@ body {
 #dialogue {
   position: absolute;
   inset: 0;
-  opacity: 0;
   z-index: 5000;
   pointer-events: none;
   opacity: 1;
@@ -248,7 +247,7 @@ body {
   width: 100vw;
   height: 40vh;
   left: 0;
-  bottom: 0;
+  top: 100vh;
   background: linear-gradient(
     to top,
     rgba(0,0,0,0.8) 70%,
