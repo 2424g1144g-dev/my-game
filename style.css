@@ -28,7 +28,7 @@ body {
   justify-content: center;
 }
 #flash {
-  position: aboslute;
+  position: absolute;
   inset: 0;
   width: 100vw;
   height: 100vh;
@@ -37,7 +37,9 @@ body {
   opacity: 0;
   z-index: 999999;
 }
-.actionFlash { animation: flash 0.3s linear; }
+.actionFlash { 
+  animation: flash 0.3s linear;
+}
 @keyframes flash {
   0% {opacity: 0;}
   50% {opacity: 1;}
