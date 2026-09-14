@@ -135,6 +135,7 @@ body {
   width: max-content;
   height: 30px;
   color: white;
+  text-align: center;
   transform: translateX(-50%);
   z-index: 300;
   font-size: 24px;
