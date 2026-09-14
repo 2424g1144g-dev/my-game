@@ -247,7 +247,7 @@ body {
   width: 100vw;
   height: 40vh;
   left: 0;
-  top: 100vh;
+  top: 60vh;
   background: linear-gradient(
     to top,
     rgba(0,0,0,0.8) 70%,
@@ -257,7 +257,7 @@ body {
 #dialogue .name {
   position: absolute;
   left: 40px;
-  top: 72%;
+  top: 30%;
   width: max-content;
   color: white;
   font-family: "name";
@@ -266,7 +266,7 @@ body {
 #dialogue .text {
   position: absolute;
   left: 80px;
-  top: 80%;
+  top: 45%;
   width: max-content;
   font-size: 45px;
   text-align: left;
