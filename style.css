@@ -100,3 +100,27 @@ body {
   z-index: 125;
   opacity: 1
 }
+#titleMenu {
+  position: absolute;
+  left: 60px;
+  top: 200px;
+  display: flex;
+  gap: 15px;
+  font-family: "title";
+}
+.title-option {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333333;       /* 通常の文字色 */
+  cursor: pointer;      /* マウスが乗ったら指マークにする */
+  transition: all 0.2s; /* 変化をなめらかにする */
+  user-select: none;    /* 文字の選択（青いハイライト）を防止 */
+  display: inline-block;
+  width: fit-content;
+}
+/* マウスが被ったとき（ホバー時）の演出 */
+.title-option:hover {
+  color: #ff4757;             /* マウスが乗ったら赤色に変化 */
+  transform: translateX(10px); /* 右にひょっこり移動する */
+  text-shadow: 0 0 8px rgba(255, 71, 87, 0.4); /* うっすら光る効果 */
+}
