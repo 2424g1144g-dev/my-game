@@ -102,12 +102,14 @@ body {
 }
 #titleMenu {
   position: absolute;
-  left: 60px;
-  top: 200px;
+  left: 150px;
+  top: 300px;
+  width: max-content;
   display: flex;
   flex-direction: column;
   gap: 15px;
   font-family: "title";
+  transform: scale(1.5);
   z-index: 300;
 }
 .title-option {
