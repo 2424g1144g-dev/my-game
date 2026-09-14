@@ -13,8 +13,10 @@ window.addEventListener("keydown", (e) => {
 function start() {
   const flash = document.getElementById("flash");
   const img = document.getElementById("titleTsukagoe");
+  const menu = document.getElementById("titleMenu");
   flash.classList.add("actionFlash");
   img.src = "assets/BG/titleTsukagoeGood.png";
+  menu.style.display = "none";
   setTimeout(() => {
     flash.classList.remove("actionFlash");
   }, 500);
