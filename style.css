@@ -107,6 +107,7 @@ body {
   display: flex;
   gap: 15px;
   font-family: "title";
+  z-index: 300;
 }
 .title-option {
   font-size: 20px;
