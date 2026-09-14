@@ -128,3 +128,14 @@ body {
   transform: translateX(10px); /* 右にひょっこり移動する */
   text-shadow: 0 0 8px rgba(255, 71, 87, 0.4); /* うっすら光る効果 */
 }
+#titleCredit {
+  position: absolute;
+  left: 50vw;
+  bottom: 30px;
+  width: max-content;
+  height: max-content;
+  color: white;
+  transform: translateX(-50%);
+  z-index: 300;
+  font-size: 24px;
+}
