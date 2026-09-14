@@ -131,7 +131,7 @@ body {
 #titleCredit {
   position: absolute;
   left: 50vw;
-  bottom: 30px;
+  top: 93vh;
   width: max-content;
   height: 30px;
   color: white;
