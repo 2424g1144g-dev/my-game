@@ -27,6 +27,21 @@ body {
   flex-direction: column-reverse;
   justify-content: center;
 }
+#flash {
+  position: aboslute;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  background: white;
+  z-index: 999999;
+}
+.actionFlash { animation: flash 0.3s linear; }
+@keyframes flash {
+  0% {opacity: 0;}
+  50% {opacity: 1;}
+  100% {opacity: 0;}
+}
 
 #titleContainer {
   position: absolute;
