@@ -14,7 +14,7 @@ function start() {
   const flash = document.getElementById("flash");
   const img = document.getElementById("titleTsukagoe");
   flash.classList.add("actionFlash");
-  img.src = "aseets/BG/titleTsukagoeGood.png";
+  img.src = "assets/BG/titleTsukagoeGood.png";
   setTimeout(() => {
     flash.classList.remove("actionFlash");
   }, 500);
