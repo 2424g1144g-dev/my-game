@@ -234,7 +234,7 @@ body {
   100% { transform: scale(1.03) translate(1px, 0px) rotate(0.5deg); }
 }
 
-#dialogueBlack {
+#dialogue {
   position: absolute;
   inset: 0;
   opacity: 0;
