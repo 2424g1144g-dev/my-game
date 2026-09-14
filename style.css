@@ -11,6 +11,10 @@ body {
   font-family: "title";
   src: url("assets/fonts/PottaOne-Regular.ttf");
 }
+@font-face {
+  font-family: "name";
+  src: url("assets/fonts/NaishoMoji-Regular.otf");
+}
 #first {
   position: absolute;
   display: flex;
@@ -163,15 +167,124 @@ body {
   font-size: 24px;
 }
 
-#openingMenu {
+
+#selectMenu {
   position: absolute;
-  left: 50vw;
-  right: 50vh;
-  width: 700px;
-  height: 400px;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  background: burlywood;
-  border: 3px solid rgb(126, 221, 11);
   z-index: 40000;
+}
+.select-option {
+  font-size: 24px;              /* 文字を少し大きく */
+  font-weight: bold;
+  color: #5d4037;               /* 文字色は濃い茶色（木目になじむ色） */
+  cursor: pointer;
+  user-select: none;
+  display: inline-block;
+  width: max-content;
+
+  /* 木板の見た目 */
+  background-color: #d7ccc8;    /* 木板のベースカラー */
+  background-image: /* 薄く木目風のグラデーションを入れる */
+    linear-gradient(to right, rgba(121, 85, 72, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(121, 85, 72, 0.1) 1px, transparent 1px);
+  background-size: 3px 3px;     /* 木目の細かさ */
+  
+  padding: 10px 25px 10px 35px; /* 内側の余白（左を少し広くして矢印のスペースを確保） */
+  margin: 5px 0;                /* 上下の間隔 */
+  border-radius: 2px;           /* 角をほんの少しだけ丸める */
+  
+  /* 木板の凹凸感（シャドウ） */
+  box-shadow: 
+    3px 3px 0px rgba(0, 0, 0, 0.2), /* 外側の影（立体感） */
+    inset 2px 2px 2px rgba(255, 255, 255, 0.5), /* 内側のハイライト（光） */
+    inset -2px -2px 2px rgba(0, 0, 0, 0.3); /* 内側の影（奥行き） */
+
+  border: 2px solid #a1887f;    /* 少し濃い茶色の枠線 */
+  
+  transition: all 0.1s ease-out; /* 変化を少し速くしてキビキビさせる */
+  position: relative;
+}
+
+/* 最初の「▶」の色だけ変える演出 */
+.select-option::first-letter {
+  color: #e64a19;               /* 矢印をオレンジ（サバイバルカラー）に */
+}
+
+/* --- マウスが被ったとき（ホバー時）の演出 --- */
+.select-option:hover {
+  background-color: #bcaaa4;    /* 背景を少し濃い木の色に */
+  color: #3e2723;               /* 文字色も濃く */
+  transform: scale(1.03);       /* ほんの少しだけ大きくする */
+  
+  /* ホバー時は影を強くして、浮き上がったように見せる */
+  box-shadow: 
+    5px 5px 0px rgba(0, 0, 0, 0.3),
+    inset 2px 2px 2px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 2px rgba(0, 0, 0, 0.4);
+
+  /* ゲームっぽく、マウスホバー時に少し震えるアニメーションを追加 */
+  animation: rumble 0.1s linear infinite;
+}
+
+/* ボタンが震えるアニメーションの定義 */
+@keyframes rumble {
+  0% { transform: scale(1.03) translate(0px, 0px) rotate(0deg); }
+  25% { transform: scale(1.03) translate(1px, 1px) rotate(0.5deg); }
+  50% { transform: scale(1.03) translate(0px, -1px) rotate(-0.5deg); }
+  75% { transform: scale(1.03) translate(-1px, 1px) rotate(0deg); }
+  100% { transform: scale(1.03) translate(1px, 0px) rotate(0.5deg); }
+}
+
+#dialogueBlack {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  z-index: 5000;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+#dialogueBG {
+  position: absolute;
+  width: 100vw;
+  height: 40vh;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.8) 70%,
+    rgba(0,0,0,0.0) 100%
+  )
+}
+#dialogue .name {
+  position: absolute;
+  left: 40px;
+  top: 72%;
+  width: max-content;
+  color: white;
+  font-family: "name";
+  font-size: 30px;
+}
+#dialogue .text {
+  position: absolute;
+  left: 80px;
+  top: 80%;
+  width: max-content;
+  font-size: 45px;
+  text-align: left;
+  line-height: 1.7;
+  font-family: "dialogue3textFont";
+}
+
+
+
+/*テキストの色*/
+.blue {
+  color: #579ca9;
+}
+.yellow {
+  color: #ffdc10;
+  -webkit-text-stroke: 1px #bb8f2e;
+}
+.green {
+  color: rgba(131,222,102,1.0)
 }
