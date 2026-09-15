@@ -27,5 +27,5 @@ function start() {
     useDialog("dialogue");
     DIALOGUE.init(dia, DIALOGUE.data);
     DIALOGUE.start(DIALOGUE_LINES.opening);
-  }, 1500);
+  }, 2500);
 }
