@@ -17,7 +17,7 @@ body {
 }
 @font-face {
   font-family: "text";
-  src: url("assets/fonts/Huninn-Regular.ttf");
+  src: url("assets/fonts/NekoSpoon.ttf");
 }
 #first {
   position: absolute;
@@ -192,6 +192,7 @@ body {
   user-select: none;
   display: inline-block;
   width: max-content;
+  font-family: "text";
 
   /* 木板の見た目 */
   background-color: #d7ccc8;    /* 木板のベースカラー */
