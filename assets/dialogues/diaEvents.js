@@ -8,7 +8,7 @@ window.DIALOGUE_EVENTS = {
     log.classList.toggle("show");
   },
 
-  choice: () => {
+  choice: (event) => {
     showChoice(event.choices);
   }
 }
