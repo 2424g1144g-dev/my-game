@@ -22,4 +22,9 @@ function start() {
     flash.classList.remove("actionFlash");
     title.style.opacity = 0;
   }, 500);
+  setTimeout(() => {
+    useDialog("dialogue");
+    DIALOGUE.init(dia, DIALOGUE.data);
+    DIALOGUE.start(DIALOGUE_LINES.opening);
+  }, 1500);
 }

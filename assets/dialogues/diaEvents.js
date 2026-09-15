@@ -3,4 +3,8 @@ window.DIALOGUE_EVENTS = {
     textEnter != textEnter;
   },
   
+  diaToggle: () => {
+    const log = activeDialog;
+    log.classList.toggle("show");
+  }
 }

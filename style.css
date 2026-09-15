@@ -177,7 +177,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); /* 完璧な上下左右中央揃え */
-  display: flex;
+  display: none;
   flex-direction: column; /* 上下縦並び */
   align-items: center;     /* 左右の中央揃え */
   justify-content: center;/* 上下の中央揃え */
@@ -249,8 +249,11 @@ body {
   inset: 0;
   z-index: 5000;
   pointer-events: none;
-  opacity: 1;
+  opacity: 0;
   transition: opacity 0.5s ease-out;
+}
+#dialogue.show {
+  opacity: 1;
 }
 #dialogueBG {
   position: absolute;
