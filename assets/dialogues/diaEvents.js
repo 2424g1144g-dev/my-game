@@ -9,6 +9,6 @@ window.DIALOGUE_EVENTS = {
   },
 
   choice: () => {
-    showChoice(event.id);
+    showChoice(event.choices);
   }
 }
