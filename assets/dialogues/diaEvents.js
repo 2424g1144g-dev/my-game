@@ -6,5 +6,9 @@ window.DIALOGUE_EVENTS = {
   diaToggle: () => {
     const log = activeDialog;
     log.classList.toggle("show");
+  },
+
+  choice: () => {
+    showChoice(event.id);
   }
 }

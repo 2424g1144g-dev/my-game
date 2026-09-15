@@ -343,23 +343,43 @@ document.addEventListener("keydown", e => {
 function showChoice(...args) {
     const menu = document.getElementById('selectMenu');
     menu.innerHTML = '';
-    // 引数を2つずつ（テキスト, 実行用関数）セットで処理
+  
+    // 引数を2つずつ（テキスト, ダイアログキーまたは関数）セットで処理
     for (let i = 0; i < args.length; i += 2) {
       const text = args[i];
-      const action = args[i + 1];
+      const target = args[i + 1]; // 文字列(ダイアログのキー) または 関数
+  
       if (!text) continue;
-      // span要素を作成
+  
       const option = document.createElement('span');
       option.className = 'select-option';
-      option.textContent = ` ${text}`;
+      option.textContent = `▶ ${text}`;
+  
       option.onclick = function() {
-        menu.innerHTML = '';
-        if (typeof action === 'function') {
-          action();
+        menu.innerHTML = ''; // 選択肢を消す
+  
+        if (typeof target === 'function') {
+          // 関数が渡された場合はそのまま実行
+          target();
+        } else if (typeof target === 'string') {
+          // 文字列（ダイアログのキー）が渡された場合はダイアログを開始
+          playDialogue(target);
         }
       };
   
       menu.appendChild(option);
     }
+  
     menu.style.display = 'flex';
+  }
+  
+  /**
+   * ダイアログ再生用の共通ヘルパー関数
+   */
+  function playDialogue(dialogueKey) {
+    if (typeof DIALOGUE_LINES !== 'undefined' && DIALOGUE_LINES[dialogueKey]) {
+      DIALOGUE.start(DIALOGUE_LINES[dialogueKey]);
+    } else {
+      console.warn("指定されたダイアログが見つかりません:", dialogueKey);
+    }
   }
