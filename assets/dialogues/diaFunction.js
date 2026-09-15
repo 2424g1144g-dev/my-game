@@ -368,3 +368,27 @@ document.addEventListener("keydown", e => {
   playSE("dialoguePass");
   DIALOGUE.next();
 });
+
+function showChoice(...args) {
+    const menu = document.getElementById('selectMenu');
+    menu.innerHTML = '';
+    // 引数を2つずつ（テキスト, 実行用関数）セットで処理
+    for (let i = 0; i < args.length; i += 2) {
+      const text = args[i];
+      const action = args[i + 1];
+      if (!text) continue;
+      // span要素を作成
+      const option = document.createElement('span');
+      option.className = 'select-option';
+      option.textContent = ` ${text}`;
+      option.onclick = function() {
+        menu.innerHTML = '';
+        if (typeof action === 'function') {
+          action();
+        }
+      };
+  
+      menu.appendChild(option);
+    }
+    menu.style.display = 'flex';
+  }
