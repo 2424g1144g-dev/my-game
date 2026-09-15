@@ -340,24 +340,53 @@ document.addEventListener("keydown", e => {
   DIALOGUE.next();
 });
 
+//背景
+const backgrounds = {
+  none: "none",
+  shipTsukagoe: "assets/BG/shipTsukagoe.png";
+};
+
+const bgEl = document.getElementById("background_layer");
+function changeBackground(id, fade = 800) {
+  const src = backgrounds[id];
+  if (!src) {
+    console.warn("背景が未定義:", id);
+    return;
+  }
+  if (src === "none") {
+    bgEl.style.transition = `opacity ${fade}ms ease`;
+    bgEl.style.opacity = 0;
+    return
+  }
+  // 即時切り替え
+  if (fade === 0) {
+    bgEl.style.transition = "none";
+    bgEl.style.opacity = 1;
+    bgEl.style.backgroundImage = `url(${src})`;
+    return;
+  }
+  //フェード切り替え
+  bgEl.style.transition = `opacity ${fade}ms ease`;
+  bgEl.style.opacity = 0;
+  setTimeout(() => {
+    bgEl.style.backgroundImage = `url(${src})`;
+    bgEl.style.opacity = 1;
+  }, fade);
+}
+
 function showChoice(...args) {
     const menu = document.getElementById('selectMenu');
     menu.innerHTML = '';
-  
     // 引数を2つずつ（テキスト, ダイアログキーまたは関数）セットで処理
     for (let i = 0; i < args.length; i += 2) {
       const text = args[i];
       const target = args[i + 1]; // 文字列(ダイアログのキー) または 関数
-  
       if (!text) continue;
-  
       const option = document.createElement('span');
       option.className = 'select-option';
       option.textContent = `▶ ${text}`;
-  
       option.onclick = function() {
         menu.innerHTML = ''; // 選択肢を消す
-  
         if (typeof target === 'function') {
           // 関数が渡された場合はそのまま実行
           target();
@@ -366,16 +395,10 @@ function showChoice(...args) {
           playDialogue(target);
         }
       };
-  
       menu.appendChild(option);
     }
-  
     menu.style.display = 'flex';
   }
-  
-  /**
-   * ダイアログ再生用の共通ヘルパー関数
-   */
   function playDialogue(dialogueKey) {
     if (typeof DIALOGUE_LINES !== 'undefined' && DIALOGUE_LINES[dialogueKey]) {
       DIALOGUE.start(DIALOGUE_LINES[dialogueKey]);
