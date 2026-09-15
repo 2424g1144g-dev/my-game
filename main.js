@@ -15,6 +15,7 @@ function start() {
   const img = document.getElementById("titleTsukagoe");
   const menu = document.getElementById("titleMenu");
   const title = document.getElementById("titleContainer");
+  const dia = document.getElementById("dialogue");
   flash.classList.add("actionFlash");
   img.src = "assets/BG/titleTsukagoeGood.png";
   menu.style.display = "none";
