@@ -57,34 +57,6 @@ window.DIALOGUE = {
     const previous = this.dialogueIndex > 0 ? this.data[this.dialogueIndex - 1] : null;
     const previousName = previous ? previous.name : "";
     this.els.name.innerText = d.name;
-    if (previousName !== d.name) {
-      document.getElementById("zappingLayer").classList.remove("zappingAnim");
-      void document.getElementById("zappingLayer").offsetWidth;
-      document.getElementById("zappingLayer").classList.add("zappingAnim");
-      icon = document.getElementById("leftBarImg");
-      setTimeout(() => {
-        if (d.name !== "ナレーション") icon.opacity = 1;
-        if (d.name === "ニシモト　タツロウ") {
-          icon.src = "assets/icon/iconTaturo.png";
-        } else if (d.name === "フルイチ　ヒデハル") {
-          icon.src = "assets/icon/iconFakeFuruichi.png";
-        } else if (d.name === "ヤマモト　ケイゾウ") {
-          icon.src = "assets/icon/iconKeizo.png";
-        } else if (d.name === "ササノ　ケント") {
-          icon.src = "assets/icon/iconKento.png";
-        } else if (d.name === "ツカゴエ　ミツヒロ") {
-          icon.src = "assets/icon/iconMitsuhiro.png";
-        } else if (d.name === "コウチョウ"){
-          icon.src = "assets/icon/iconPrincipal.png";
-        } else if (d.name === "シノハラ　リュウジ") {
-          icon.src = "assets/icon/iconRyuji.png";
-        } else if (d.name === "ヤマモト　シゲオ") {
-          icon.src = "assets/icon/iconShige.png";
-        } else if (d.name === "ナレーション") {
-          icon.style.opacity = 0;
-        }
-      },150)
-    }
     this.els.name.innerText = d.name;
     this.els.text.innerHTML = "";
     this.lineIndex = 0;
