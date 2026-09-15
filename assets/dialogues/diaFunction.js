@@ -57,7 +57,6 @@ window.DIALOGUE = {
     const previous = this.dialogueIndex > 0 ? this.data[this.dialogueIndex - 1] : null;
     const previousName = previous ? previous.name : "";
     this.els.name.innerText = d.name;
-    this.els.name.innerText = d.name;
     this.els.text.innerHTML = "";
     this.lineIndex = 0;
     this.typeLine();
