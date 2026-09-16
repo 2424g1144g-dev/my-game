@@ -53,6 +53,15 @@ body {
   50% {opacity: 1;}
   100% {opacity: 0;}
 }
+@keyframes whiteFlash {
+  0%   { filter: brightness(1); }
+  50%  { filter: brightness(5); }  /* ここで白く */
+  100% { filter: brightness(1); }
+}
+.whiteFlash {
+  animation: whiteFlash 0.3s linear;
+}
+
 
 #titleContainer {
   position: absolute;

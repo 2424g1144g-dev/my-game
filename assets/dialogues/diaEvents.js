@@ -43,9 +43,9 @@ window.DIALOGUE_EVENTS = {
 
   spriteFlash: () => {
     setTimeout (() => {
-      document.getElementById("spriteContain").classList.add("actionFlash");
+      document.getElementById("spriteContain").classList.add("whiteFlash");
       addEventListener("animationend", () => {
-        document.getElementById("spriteContain").classList.remove("actionFlash");
+        document.getElementById("spriteContain").classList.remove("whiteFlash");
       })
     }, 200);
   },
