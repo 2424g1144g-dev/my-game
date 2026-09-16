@@ -244,6 +244,18 @@ body {
   100% { transform: scale(1.03) translate(1px, 0px) rotate(0.5deg); }
 }
 
+#background_layer {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  transition: opacity 1s linear;
+}
+
+
 #dialogue {
   position: absolute;
   inset: 0;
