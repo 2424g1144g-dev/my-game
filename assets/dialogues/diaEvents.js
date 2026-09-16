@@ -6,7 +6,7 @@ window.DIALOGUE_EVENTS = {
   diaChange: (event) => {
     useDialog(event.id);
   },
-  
+
   diaToggle: () => {
     const log = activeDialog;
     log.classList.toggle("show");
@@ -26,6 +26,13 @@ window.DIALOGUE_EVENTS = {
     });
     // スプレッド構文 (...) で配列を展開して showChoice を実行
     showChoice(...choiceArgs);
+  },
+
+  whiteFlash: () => {
+    document.getElementById("flash").classList.add("actionFlash");
+    addEventListener("animationend", () => {
+      document.getElementById("flash").classList.remove("actionFlash");
+    })
   },
 
   spriteChange: (event) => {
