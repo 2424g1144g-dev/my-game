@@ -340,6 +340,18 @@ function changeBackground(id, fade = 800) {
   }, fade);
 }
 
+function spriteChange(src, d=100) {
+    const el = document.getElementById("spriteContain");
+    el.style.transition = `opacity ${d}ms linear`;
+    el.style.opacity = 0;
+    if (src === "none") return;
+    setTimeout(() => {
+      console.log("スプライトを変更", src);
+      el.src = `assets/characters/${src}.png`;
+      el.style.opacity = 1;
+    },d);
+  }
+
 function showChoice(...args) {
     const menu = document.getElementById('selectMenu');
     menu.innerHTML = '';

@@ -24,6 +24,7 @@
   </div>
 
   <div id="background_layer"></div>
+  <div id="fadeWhite"></div>
   <div id="selectMenu">
     <span class="select-option">選択肢のサンプル</span>
     <span class="select-option">選択肢のサンプル２</span>
@@ -35,6 +36,19 @@
     </div>
     <div id="enterKey"></div>
   </div>
+  <div id=dialogueSpeaking>
+    <div id="box"></div>
+    <div id="diaName"class="name">ニシモト　タツロウ</div>
+    <div id="diaText" class="text">これはサンプルテキストだよ。<br>犯人はツカゴエかもしれないね。</div>
+    <div id="diaState" class="state">SPEAKING</div>
+    <div id="enterKey">
+      <div id="mainEnter"></div>
+      <div id="subEnter"></div>
+    </div>
+  </div>
+  <div id="sprite">
+    <img id="spriteContain">
+  </div>
 
 
 
@@ -44,6 +58,8 @@
     <img src="assets/BG/titleTsukagoe.png" loading="eager">
     <img src="assets/BG/titleTsukagoeGood.png" loading="eager">
     <img src="assets/BG/shipTsukagoe.jpeg" loading="eager">
+
+    <img src="assets/characters/mitsuhiro/Mitsuhiro_Normal.png" loading="eager">
 
   <script src="main.js"></script>
   <script src="assets/dialogues/diaFunction.js"></script>
