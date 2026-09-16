@@ -161,7 +161,7 @@ document.addEventListener("keydown", e => {
     if (e.key !== "Enter" || e.repeat) return;
     if (!textEnter) return;
   
-    playSE("dialoguePass");
+    //playSE("dialoguePass");
     DIALOGUE.next();
   });
 
