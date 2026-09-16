@@ -17,5 +17,7 @@ DIALOGUE_LINES.watchOpening = [
     {name: "", lines: [{segments: [{text: " "}], event: [{type: "diaToggle"}], autoNext: true, dialogueAutoNext: true, wait: 800}]},
     {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "いや〜人生で初めて船になんて乗ったが、"}], event: [{type: "enterToggle"},{type: "spriteChange", id: "mitsuhiro/Mitsuhiro_Good"},{type: "whiteFlash"}]},
                                          {segments: [{text: "乗り心地最高やな〜。"}]}]},
+    {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "料理も美味いし、潮風もきもちえぇ！"}]},
+                                         {segments: [{text: "文句のつけどころがないわぁ。"}]}]}
 
 ]
