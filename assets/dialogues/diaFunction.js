@@ -299,7 +299,7 @@ function spriteChange(src, d=100) {
 //背景
 const backgrounds = {
   none: "none",
-  shipTsukagoe: "assets/BG/shipTsukagoe.png";
+  shipTsukagoe: "assets/BG/shipTsukagoe.png"
 };
 
 const bgEl = document.getElementById("background_layer");
