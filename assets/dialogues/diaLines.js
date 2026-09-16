@@ -11,5 +11,7 @@ DIALOGUE_LINES.watchOpening = [
     {name: "ナレーション", lines: [{segments: [{text: "名前は", class: "green"},{text: "塚越充浩（ツカゴエ　ミツヒロ）", class: "yellow"}], event: [{type: "diaToggle"},{type: "enterToggle"}]}]},
     {name: "ナレーション", lines: [{segments: [{text: "サッカー部の顧問で、サッカーのしすぎで", class: "green"}]},
                                    {segments: [{text: "下半身だけ妙に筋肉質である。", class: "green"}]}]},
-    {name: "ナレーション", lines: [{segments: [{text: "そんな塚越は潮風に吹かれながら優雅な時間を過ごしていた..."}]}]}
+    {name: "ナレーション", lines: [{segments: [{text: "そんな塚越は潮風に吹かれながら優雅な時間を過ごしていた...", class: "green"}]}]},
+    {name: "", lines: [{segments: [{text: " "}], event: [{type: "background", id: "ship", fade: 800},{type: "diaToggle"},{type: "enterToggle"}], autoNext: true, dialogueAutoNext: true, wait: 2500}]},
+
 ]
