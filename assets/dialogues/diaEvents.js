@@ -5,7 +5,8 @@ window.DIALOGUE_EVENTS = {
   
   diaChange: (event) => {
     useDialog(event.id);
-  }
+  },
+  
   diaToggle: () => {
     const log = activeDialog;
     log.classList.toggle("show");
