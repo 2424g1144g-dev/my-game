@@ -20,5 +20,6 @@ DIALOGUE_LINES.watchOpening = [
     {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "料理も美味いし、潮風もきもちえぇ！"}]},
                                          {segments: [{text: "文句のつけどころがないわぁ。"}]}]},
     {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "そういえば、この後船内で卓球大会やると言っとったな。"}], event: [{type: "spriteChange", id: "mitsuhiro/Mitsuhiro_Think"}]}]},
+    {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "よっしゃ！！俺が船内最強になるしかねぇな！！"}], event: [{type: "spriteChange", id: "mitsuhiro/Mitsuhiro_Excited"},{type: "spriteFlash"}]}]}
 
 ]
