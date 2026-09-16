@@ -156,6 +156,15 @@ window.DIALOGUE = {
   }
 };
 
+document.addEventListener("keydown", e => {
+    if (!textEnter) return;
+    if (e.key !== "Enter" || e.repeat) return;
+    if (!textEnter) return;
+  
+    playSE("dialoguePass");
+    DIALOGUE.next();
+  });
+
 function search(dialogueType, camOptions = {}) {
   setTimeout(() => {
     // 演出処理
