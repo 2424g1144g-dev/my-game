@@ -7,6 +7,9 @@ DIALOGUE_LINES.opening = [
 DIALOGUE_LINES.watchOpening = [
     {name: "ナレーション", lines: [{segments: [{text: "とある県にて...ある一人の化学教師が", class: "green"}]},
                                    {segments: [{text: "長期休みを利用してクルーズ船旅を楽しんでいました...", class: "green"}], event: [{type: "enterToggle"}]}]},
-    {name: "", lines: [{segments: [{text: " "}], event: [{type: "background", id: "shipTsukagoe", fade: 800},{type: "diaToggle"},{type: "enterToggle"}], autoNext: true, dialogueAutoNext: true, wait: 1500}]},
-    {name: "ナレーション", lines: [{segments: [{text: "名前は", class: "green"},{text: "塚越充浩（ツカゴエ　ミツヒロ）", class: "yellow"}], event: [{type: "diaToggle"}]}]}
+    {name: "", lines: [{segments: [{text: " "}], event: [{type: "background", id: "shipTsukagoe", fade: 800},{type: "diaToggle"},{type: "enterToggle"}], autoNext: true, dialogueAutoNext: true, wait: 2000}]},
+    {name: "ナレーション", lines: [{segments: [{text: "名前は", class: "green"},{text: "塚越充浩（ツカゴエ　ミツヒロ）", class: "yellow"}], event: [{type: "diaToggle"},{type: "enterToggle"}]}]},
+    {name: "ナレーション", lines: [{segments: [{text: "サッカー部の顧問で、サッカーのしすぎで", class: "green"}]},
+                                   {segments: [{text: "下半身だけ妙に筋肉質である。", class: "green"}]}]},
+    {name: "ナレーション", lines: [{segments: [{text: "そんな塚越は潮風に吹かれながら優雅な時間を過ごしていた..."}]}]}
 ]
