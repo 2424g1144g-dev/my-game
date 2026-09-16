@@ -5,6 +5,8 @@ window.DIALOGUE_EVENTS = {
   
   diaChange: (event) => {
     useDialog(event.id);
+    const el = document.getELementById(event.id);
+    DIALOGUE.init(el, DIALOGUE.data);
   },
 
   diaToggle: () => {
