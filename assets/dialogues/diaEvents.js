@@ -5,7 +5,7 @@ window.DIALOGUE_EVENTS = {
   
   diaChange: (event) => {
     useDialog(event.id);
-    const el = document.getELementById(event.id);
+    const el = document.getElementById(event.id);
     DIALOGUE.init(el, DIALOGUE.data);
   },
 
