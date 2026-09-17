@@ -50,6 +50,7 @@ DIALOGUE_LINES.watchOpening = [
     {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "俺...ここで死ぬんか...？", class: "blue"}]}]},
     {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "まだ...サッカー部に...暴力振るっとらんのに...", class: "blue"}]},
                                          {segments: [{text: "死...ぬわけに...は...", class: "blue"}]}]},
-    {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: " "}], event: [{type: "diaToggle"},{type: "enterToggle"},{type: "background", id: "none", fade: 200}], autoNext: true, dialogueAutoNext: true, wait: 800}]},
-    {name: " ", lines: [{segments: [{text: " "}], event: [{type: "background", id: "island", fade: 1000}]}]}
+    {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: " "}], event: [{type: "diaToggle"},{type: "enterToggle"},{type: "background", id: "none", fade: 200}], autoNext: true, dialogueAutoNext: true, wait: 1500}]},
+    {name: " ", lines: [{segments: [{text: " "}], event: [{type: "background", id: "island", fade: 1000}], autoNext: true, dialogueAutoNext: true, wait: 1500}]},
+    {name: " ", lines: [{segments: [{text: " "}], event: [{type: "background", id: "layingTsukagoe", fade: 500}]}]}
 ]
