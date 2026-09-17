@@ -309,7 +309,8 @@ function spriteChange(src, d=100) {
 const backgrounds = {
   none: "none",
   shipTsukagoe: "assets/BG/shipTsukagoe.jpeg",
-  ship: "assets/BG/ship.jpeg"
+  ship: "assets/BG/ship.jpeg",
+  sea: "assets/BG/sea.jpeg"
 };
 
 const bgEl = document.getElementById("background_layer");
