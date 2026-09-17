@@ -58,7 +58,7 @@ DIALOGUE_LINES.watchOpening = [
     {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "..."}], event: [{type: "enterToggle"}]}]},
     {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "......"}]}]},
     {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: ".................."}]}]},
-    {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "......................................."}], [{type: "enterToggle"}]},
+    {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "......................................."}], event: [{type: "enterToggle"}]},
                                          {segments: [{text: "ん....."}], event: [{type: "whiteFlash"},{type: "enterToggle"}]}]},
     {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "なん...や...？海の音......？"}]}]},
     {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "って......"}]}]},
