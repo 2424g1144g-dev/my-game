@@ -46,5 +46,9 @@ DIALOGUE_LINES.watchOpening = [
     {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: " "}], event: [{type: "diaToggle"},{type: "enterToggle"}], autoNext: true, dialogueAutoNext: true, wait: 800}]},
     {name: " ", lines: [{segments: [{text: " "}], event: [{type: "BGRumble"},{type: "background", id: "none", fade: 0},{type: "spriteChange", id: "none"}], autoNext: true, dialogueAutoNext: true, wait: 3000}]},
     {name: " ", lines: [{segments: [{text: " "}], event: [{type: "diaChange", id: "dialogue"},{type: "background", id: "sea", fade: 2000}], autoNext: true, dialogueAutoNext: true, wait: 3000}]},
-    {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "あかん...俺は泳げんのや..."}], event: [{type: "diaToggle"},{type: "enterToggle"}]}]}
+    {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "あかん...俺は泳げんのや...", class: "blue"}], event: [{type: "diaToggle"},{type: "enterToggle"}]}]},
+    {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "俺...ここで死ぬんか...？", class: "blue"}]}]},
+    {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "まだ...サッカー部に...暴力振るっとらんのに...", class: "blue"}]},
+                                         {segments: [{text: "死...ぬわけに...は...", class: "blue"}]}]},
+    {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: " "}], event: [{type: "diaToggle"},{type: "enterToggle"},{type: "background", id: "none", fade: 200}]}]}
 ]
