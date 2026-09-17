@@ -19,11 +19,15 @@ DIALOGUE_LINES.watchOpening = [
     {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "いや〜人生で初めて船になんて乗ったが、"}], event: [{type: "enterToggle"},{type: "spriteChange", id: "mitsuhiro/Mitsuhiro_Good"},{type: "whiteFlash"}]},
                                          {segments: [{text: "乗り心地最高やな〜。"}]}]},
     {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "たまには日常を忘れてのんびりするのも悪ないな。"}]}]},
-    {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "料理も美味いし、潮風もきもちえぇ！"}]},
-                                         {segments: [{text: "文句のつけどころがないわぁ。"}]}]},
+    {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "しかも料理も美味いし、潮風もきもちえぇ！"}]},
+                                         {segments: [{text: "ホンマ文句のつけどころがないわぁ。"}]}]},
     {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "そういえば、この後船内で卓球大会やると言っとったな。"}], event: [{type: "spriteChange", id: "mitsuhiro/Mitsuhiro_Think"}]}]},
     {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "たしか優勝者には豪華景品があるとかなんとか..."}]}]},
     {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "よっしゃ！！俺が船内最強になるしかねぇな！！"}], event: [{type: "spriteChange", id: "mitsuhiro/Mitsuhiro_Excited"},{type: "spriteFlash"}]}]},
-    {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "豪華景品は俺のものじゃけぇ！！"}]}]}
+    {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "豪華景品は俺のものじゃけぇ！！"}]}]},
+    {name: " ", segments: [{text: [{" "}], event: [{type: "diaToggle"},{type: "enterToggle"}], autoNext: true, dialogueAutoNext: true, wait: 600}]},
+    {name: "ナレーション", lines: [{segments: [{text: "塚越はとても船旅を満喫していました。", class: "green"}], event: [{type: "diaChange", id: "dialogue"},{type: "diaToggle"},{type: "enterToggle"}]}]},
+    {name: "ナレーション", lines: [{segments: [{text: "そして、卓球大会に行こうと歩き出そうとしたときでした..."}]}]},
+    {name: "ナレーション", lines: [{segments: [{text: " "}]}]}
 
 ]
