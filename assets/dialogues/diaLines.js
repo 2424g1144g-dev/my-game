@@ -44,7 +44,7 @@ DIALOGUE_LINES.watchOpening = [
     {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "はぁ？！　き...機雷やと？！"}]}]},
     {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "あかん！！揺れがヤバい落ちる！！"}]}]},
     {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: " "}], event: [{type: "diaToggle"},{type: "enterToggle"}], autoNext: true, dialogueAutoNext: true, wait: 800}]},
-    {name: " ", lines: [{segments: [{text: " "}], event: [{type: "Rumble"},{type: "background", id: "none", fade: 0},{type: "spriteChange", id: "none"}], autoNext: true, dialogueAutoNext: true, wait: 3000}]},
-    {name: " ", lines: [{segments: [{text: " "}], event: [{type: "diaChange", id: "dialogue"},{type: "background", id: "sea", fade: 2000}], autoNext: true, dialogueAutoNext: true, wait: 2000}]},
+    {name: " ", lines: [{segments: [{text: " "}], event: [{type: "BGRumble"},{type: "background", id: "none", fade: 0},{type: "spriteChange", id: "none"}], autoNext: true, dialogueAutoNext: true, wait: 3000}]},
+    {name: " ", lines: [{segments: [{text: " "}], event: [{type: "diaChange", id: "dialogue"},{type: "background", id: "sea", fade: 2000}], autoNext: true, dialogueAutoNext: true, wait: 3000}]},
     {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "あかん...俺は泳げんのや..."}], event: [{type: "diaToggle"},{type: "enterToggle"}]}]}
 ]
