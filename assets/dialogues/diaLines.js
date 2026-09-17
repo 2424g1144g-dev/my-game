@@ -27,7 +27,7 @@ DIALOGUE_LINES.watchOpening = [
     {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "豪華景品は俺のものじゃけぇ！！"}]}]},
     {name: " ", lines: [{segments: [{text: " "}], event: [{type: "diaToggle"},{type: "enterToggle"}], autoNext: true, dialogueAutoNext: true, wait: 600}]},
     {name: "ナレーション", lines: [{segments: [{text: "塚越はとても船旅を満喫していました。", class: "green"}], event: [{type: "diaChange", id: "dialogue"},{type: "diaToggle"},{type: "enterToggle"}]}]},
-    {name: "ナレーション", lines: [{segments: [{text: "そして、卓球大会に行こうと歩き出そうとしたときでした..."}]}]},
+    {name: "ナレーション", lines: [{segments: [{text: "そして、卓球大会に行こうと歩き出そうとしたその時...", class: "green"}]}]},
     {name: "ナレーション", lines: [{segments: [{text: " "}]}]}
 
 ]
