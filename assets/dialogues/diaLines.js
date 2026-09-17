@@ -32,6 +32,13 @@ DIALOGUE_LINES.watchOpening = [
     {name: " ", lines: [{segments: [{text: " "}], event: [{type: "diaToggle"},{type: "enterToggle"}], autoNext: true, dialogueAutoNext: true, wait: 500}]},
     {name: " ", lines: [{segments: [{text: " "}], event: [{type: "BGRumble"},{type: "whiteFlash"}], autoNext: true, dialogueAutoNext: true, wait: 1500}]},
     {name: " ", lines: [{segments: [{text: " "}], event: [{type: "diaChange", id: "dialogueSpeaking"},{type: "diaToggle"}], autoNext: true, dialogueAutoNext: true, wait: 600}]},
-    {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "な？！　なんや？！"}], event: [{type: "enterToggle"},{type: "spriteChange", id: "mitsuhiro/Mitsuhiro_Surprised"}]}]}
-
+    {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "な？！　なんや？！"}], event: [{type: "enterToggle"},{type: "spriteChange", id: "mitsuhiro/Mitsuhiro_Surprised"}]}]},
+    {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "急に船が揺れ始めやがったぞ？！　どうなってん？！"}]}]},
+    {name: "アナウンス", lines: [{segments: [{text: "ピーンポーンパーンポーン...", class: "blue"}]}]},
+    {name: "アナウンス", lines: [{segments: [{text: "お客様にお知らせします！", class: "blue"}]}]},
+    {name: "アナウンス", lines: [{segments: [{text: "当船は何者かによって仕掛けられた機雷に接触し、", class: "blue"}]},
+                                 {segments: [{text: "非常に危険な状態です！！", class: "blue"}]}]},
+    {name: "アナウンス", lines: [{segments: [{text: "決して甲板に外出されず、"}]},
+                                 {segments: [{text: "船内の救命ボートにてただちに船外に脱出してください！！"}]}]},
+    {name: "アナウンス", lines: [{segments: [{text: "ピーンポーンパーンポーン..."}]}]} 
 ]
