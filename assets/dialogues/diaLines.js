@@ -6,20 +6,25 @@ DIALOGUE_LINES.opening = [
 
 DIALOGUE_LINES.watchOpening = [
     {name: "ナレーション", lines: [{segments: [{text: "とある県にて...ある一人の化学教師が", class: "green"}]},
-                                   {segments: [{text: "長期休みを利用してクルーズ船旅を楽しんでいました...", class: "green"}], event: [{type: "enterToggle"}]}]},
+                                   {segments: [{text: "長期休みを利用してクルーズ船の旅を楽しんでいました...", class: "green"}], event: [{type: "enterToggle"}]}]},
     {name: "", lines: [{segments: [{text: " "}], event: [{type: "background", id: "shipTsukagoe", fade: 800},{type: "diaToggle"},{type: "enterToggle"}], autoNext: true, dialogueAutoNext: true, wait: 2000}]},
     {name: "ナレーション", lines: [{segments: [{text: "名前は", class: "green"},{text: "塚越充浩（ツカゴエ　ミツヒロ）", class: "yellow"}], event: [{type: "diaToggle"},{type: "enterToggle"}]}]},
-    {name: "ナレーション", lines: [{segments: [{text: "サッカー部の顧問で、サッカーのしすぎで", class: "green"}]},
+    {name: "ナレーション", lines: [{segments: [{text: "サッカー部の顧問で、サッカーのやりすぎで", class: "green"}]},
                                    {segments: [{text: "下半身だけ妙に筋肉質である。", class: "green"}]}]},
+    {name: "ナレーション", lines: [{segments: [{text: ""}]}]}
     {name: "ナレーション", lines: [{segments: [{text: "そんな塚越は潮風に吹かれながら優雅な時間を過ごしていた...", class: "green"}]}]},
     {name: "", lines: [{segments: [{text: " "}], event: [{type: "background", id: "ship", fade: 800},{type: "diaToggle"},{type: "enterToggle"}], autoNext: true, dialogueAutoNext: true, wait: 3000}]},
     {name: "", lines: [{segments: [{text: " "}], event: [{type: "diaChange", id: "dialogueSpeaking"},{type: "spriteChange", id: "mitsuhiro/Mitsuhiro_Normal"}], autoNext: true, dialogueAutoNext: true, wait: 500}]},
     {name: "", lines: [{segments: [{text: " "}], event: [{type: "diaToggle"}], autoNext: true, dialogueAutoNext: true, wait: 800}]},
     {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "いや〜人生で初めて船になんて乗ったが、"}], event: [{type: "enterToggle"},{type: "spriteChange", id: "mitsuhiro/Mitsuhiro_Good"},{type: "whiteFlash"}]},
                                          {segments: [{text: "乗り心地最高やな〜。"}]}]},
+    {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "たまには日常を忘れてのんびりするのも悪ないな。"}]}]}
     {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "料理も美味いし、潮風もきもちえぇ！"}]},
                                          {segments: [{text: "文句のつけどころがないわぁ。"}]}]},
+    {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "古市先生のおすすめに外れはやっぱないなぁ。"}]}]}
     {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "そういえば、この後船内で卓球大会やると言っとったな。"}], event: [{type: "spriteChange", id: "mitsuhiro/Mitsuhiro_Think"}]}]},
-    {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "よっしゃ！！俺が船内最強になるしかねぇな！！"}], event: [{type: "spriteChange", id: "mitsuhiro/Mitsuhiro_Excited"},{type: "spriteFlash"}]}]}
+    {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "たしか優勝者には豪華景品があるとかなんとか..."}]}]},
+    {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "よっしゃ！！俺が船内最強になるしかねぇな！！"}], event: [{type: "spriteChange", id: "mitsuhiro/Mitsuhiro_Excited"},{type: "spriteFlash"}]}]},
+    {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "豪華景品は俺のものじゃけぇ！！"}]}]}
 
 ]
