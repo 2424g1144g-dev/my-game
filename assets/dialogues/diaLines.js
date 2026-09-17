@@ -29,6 +29,7 @@ DIALOGUE_LINES.watchOpening = [
     {name: " ", lines: [{segments: [{text: " "}], event: [{type: "diaChange", id: "dialogue"}], autoNext: true, dialogueAutoNext: true, wait: 100}]},
     {name: "ナレーション", lines: [{segments: [{text: "塚越はとても船旅を満喫していました。", class: "green"}], event: [{type: "diaToggle"},{type: "enterToggle"}]}]},
     {name: "ナレーション", lines: [{segments: [{text: "そして、卓球大会に行こうと歩き出そうとしたその時...", class: "green"}]}]},
-    {name: "ナレーション", lines: [{segments: [{text: " "}]}]}
+    {name: " ", lines: [{segments: [{text: " "}], event: [{type: "diaToggle"},{type: "enterToggle"}], autoNext: true, dialogueAutoNext: true, wait: 500}]},
+    {name: " ", lines: [{segments: [{text: " "}], event: [{type: "BGRumble"},{type: "whiteFlash"}], autoNExt: true, dialogueAutoNext: true, wait: 1500}]},
 
 ]

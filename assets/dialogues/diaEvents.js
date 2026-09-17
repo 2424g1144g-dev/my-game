@@ -49,4 +49,9 @@ window.DIALOGUE_EVENTS = {
       })
     }, 200);
   },
+
+  BGRumble: () => {
+    const bg = document.getElementById("background_layer");
+    bg.classList.add("rumble");
+  }
 }
