@@ -53,5 +53,14 @@ DIALOGUE_LINES.watchOpening = [
     {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: " "}], event: [{type: "diaToggle"},{type: "enterToggle"},{type: "background", id: "none", fade: 200}], autoNext: true, dialogueAutoNext: true, wait: 1500}]},
     {name: " ", lines: [{segments: [{text: " "}], event: [{type: "background", id: "island", fade: 1000}], autoNext: true, dialogueAutoNext: true, wait: 2500}]},
     {name: " ", lines: [{segments: [{text: " "}], event: [{type: "background", id: "layingTsukagoe", fade: 500}], autoNext: true, dialogueAutoNext: true, wait: 2000}]},
-    {name: " ", lines: [{segments: [{text: " "}], event: [{type: "background", id: "landscape", fade: 500}]}]}
+    {name: " ", lines: [{segments: [{text: " "}], event: [{type: "background", id: "landscape", fade: 500}], autoNext: true, dialogueAutoNext: true, wait: 2000}]},
+    {name: " ", lines: [{segments: [{text: " "}], event: [{type: "diaToggle"}], autoNext: true, dialogueAutoNext: true, wait: 800}]},
+    {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "..."}], event: [{type: "enterToggle"}]}]},
+    {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "......"}]}]},
+    {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: ".................."}]}]},
+    {name: "ツカゴエ　ミツヒロ", lines: [{segmeents: [{text: "......................................."}]},
+                                         {segments: [{text: "ん....."}], event: [{type: "whiteFlash"}]}]},
+    {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "なん...や...？海の音......？"}]}]},
+    {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "って......"}]}]},
+    {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "どこやここ？！"}]}]}
 ]
