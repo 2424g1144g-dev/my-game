@@ -52,6 +52,6 @@ window.DIALOGUE_EVENTS = {
 
   BGRumble: () => {
     const bg = document.getElementById("background_layer");
-    bg.classList.add("rumble");
+    bg.classList.toggle("rumble");
   }
 }

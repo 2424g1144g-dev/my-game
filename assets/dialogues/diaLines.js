@@ -40,5 +40,9 @@ DIALOGUE_LINES.watchOpening = [
                                  {segments: [{text: "非常に危険な状態です！！", class: "blue"}]}]},
     {name: "アナウンス", lines: [{segments: [{text: "決して甲板に外出されず、", class: "blue"}]},
                                  {segments: [{text: "船内の救命ボートにてただちに船外に脱出してください！！", class: "blue"}]}]},
-    {name: "アナウンス", lines: [{segments: [{text: "ピーンポーンパーンポーン...", class: "blue"}]}]} 
+    {name: "アナウンス", lines: [{segments: [{text: "ピーンポーンパーンポーン...", class: "blue"}]}]},
+    {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "はぁ？！　き...機雷やと？！"}]}]},
+    {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "あかん！！揺れがヤバい落ちる！！"}]}]},
+    {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: " "}], event: [{type: "diaToggle"},{type: "enterToggle"}], autoNext: true, dialogueAutoNext: true, wait: 800}]},
+    {name: " ", lines: [{segments: [{text: " "}], event: [{type: "Rumble"},{type: "background", id: "none", fade: 0},{type: "spriteChange", id: "none"}], autoNext: true, dialogueAutoNext: true, wait: 3000}]}
 ]
