@@ -312,7 +312,8 @@ const backgrounds = {
   ship: "assets/BG/ship.jpeg",
   sea: "assets/BG/sea.jpeg",
   island: "assets/BG/titleIsland.jpg",
-  layingTsukagoe: "assets/BG/layingTsukagoe.jpeg"
+  layingTsukagoe: "assets/BG/layingTsukagoe.jpeg",
+  landscape: "assets/BG/landscape.jpeg"
 };
 
 const bgEl = document.getElementById("background_layer");
