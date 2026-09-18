@@ -1,7 +1,7 @@
 window.DIALOGUE_LINES = window.DIALOGUE_LINES || {};
 
 DIALOGUE_LINES.opening = [
-  {name: "ナレーション", lines: [{segments: [{text: "オープニングを閲覧しますか？", class: "green"}], event: [{type: "diaToggle"},{type: "choice", choices: [{text: "閲覧する", target: "watchOpening"},{text: "閲覧しない", target: "start"}]}]}]},
+  {name: "ナレーション", lines: [{segments: [{text: "オープニングを閲覧しますか？", class: "green"}], event: [{type: "diaToggle"},{type: "choice", choices: [{text: "閲覧する", target: "watchOpening"},{text: "閲覧しない", target: "tutorial"}]}]}]},
 ];
 
 DIALOGUE_LINES.watchOpening = [
@@ -72,5 +72,10 @@ DIALOGUE_LINES.watchOpening = [
     {name: "ナレーション", lines: [{segments: [{text: "周りを見てもどこも森や海が広がっているだけ。", class: "green"}]}]},
     {name: "ナレーション", lines: [{segments: [{text: "しばらく砂浜で呆然としたのち、", class: "green"}]},
                                    {segments: [{text: "死を避けるため拠点を作り、サバイバル生活を行うのだった。", class: "green"}]}]},
-    {name: " ", lines: [{segments: [{text: " "}], event: [{type: "diaToggle"},{type: "enterToggle"},{type: "spriteChange", id: "none"},{type: "background", id: "none", fade: 300}]}]}
+    {name: " ", lines: [{segments: [{text: " "}], event: [{type: "diaToggle"},{type: "enterToggle"},{type: "spriteChange", id: "none"},{type: "background", id: "none", fade: 300}], autoNext: true, dialogueAutoNext: true, wait: 2000}]},
+    {name: " ", lines: [{segments: [{text: " "}], event: [{type: "diaStart", id: "tutorial"}]}]},
+]
+
+DIALOGUE_LINES.tutorial = [
+  {name: "ナレーション", lines: [{segments: [{text: "チュートリアルを確認しますか？"}]}]}
 ]
