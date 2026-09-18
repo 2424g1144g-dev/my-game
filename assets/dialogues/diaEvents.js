@@ -18,16 +18,6 @@ window.DIALOGUE_EVENTS = {
     DIALOGUE.start(DIALOGUE_LINES[event.id]);
   },
 
-  diaStarts: (event) => {
-    setTimeout(() => {
-      if (DIALOGUE_LINES[event.id]) {
-        DIALOGUE.start(DIALOGUE_LINES[event.id]);
-      } else {
-        console.warn("ダイアログが見つかりません:", event.id);
-      }
-    }, 0);
-  },
-
   background: (event) => {
     changeBackground(event.id, event.fade);
   },
