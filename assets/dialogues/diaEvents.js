@@ -15,7 +15,7 @@ window.DIALOGUE_EVENTS = {
   },
 
   diaStart: (event) => {
-    DIALOGUE.start(DIALOGUE_LINES.event.id);
+    DIALOGUE.start(DIALOGUE_LINES[event.id]);
   },
 
   background: (event) => {
