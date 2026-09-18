@@ -74,8 +74,8 @@ DIALOGUE_LINES.watchOpening = [
                                    {segments: [{text: "死を避けるため拠点を作り、サバイバル生活を行うのだった。", class: "green"}]}]},
     {name: " ", lines: [{segments: [{text: " "}], event: [{type: "diaToggle"},{type: "enterToggle"},{type: "spriteChange", id: "none"},{type: "background", id: "none", fade: 300}], autoNext: true, dialogueAutoNext: true, wait: 2000}]},
     {name: " ", lines: [{segments: [{text: " "}], event: [{type: "diaStart", id: "tutorial"},{type: "diaToggle"}]}]},
-]
+];
 
 DIALOGUE_LINES.tutorial = [
-  {name: "ナレーション", lines: [{segments: [{text: "チュートリアルを確認しますか？"}]}]}
-]
+    {name: "ナレーション", lines: [{segments: [{text: "チュートリアルを確認しますか？"}]}]}
+];
