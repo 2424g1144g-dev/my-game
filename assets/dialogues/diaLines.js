@@ -62,5 +62,7 @@ DIALOGUE_LINES.watchOpening = [
                                          {segments: [{text: "ん....."}], event: [{type: "whiteFlash"},{type: "enterToggle"}]}]},
     {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "なん...や...？海の音......？"}]}]},
     {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "って......"}]}]},
-    {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "どこやここ？！"}]}]}
+    {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "どこやここ？！　俺はクルーズ船から落っこちたはずや！！"}]}]},
+    {name: "ツカゴエ　ミツヒロ ", lines: [{segments: [{text: "まさか漂着したんか...？"}]},
+                                          {segments: [{text: "そんなアニメみたいなことあるんか！？"}]}]}
 ]
