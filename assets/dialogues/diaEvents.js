@@ -13,9 +13,10 @@ window.DIALOGUE_EVENTS = {
     const log = activeDialog;
     log.classList.toggle("show");
   },
+
   diaStart: (event) => {
     DIALOGUE.start(DIALOGUE_LINES.event.id);
-  }
+  },
 
   background: (event) => {
     changeBackground(event.id, event.fade);
