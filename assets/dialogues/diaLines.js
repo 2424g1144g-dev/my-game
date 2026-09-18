@@ -63,6 +63,10 @@ DIALOGUE_LINES.watchOpening = [
     {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "なん...や...？海の音......？"}]}]},
     {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "って......"}]}]},
     {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "どこやここ？！　俺はクルーズ船から落っこちたはずや！！"}]}]},
-    {name: "ツカゴエ　ミツヒロ ", lines: [{segments: [{text: "まさか漂着したんか...？"}]},
-                                          {segments: [{text: "そんなアニメみたいなことあるんか！？"}]}]}
+    {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "まさか漂着したんか...？"}]},
+                                          {segments: [{text: "ウソやろそんなアニメみたいなことあるんか！？"}]}]},
+    {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "はは...おもろいなぁ...ホンマに..."}]}]},
+    {name: "", lines: [{segments: [{text: " "}], event: [{type: "diaToggle"},{type: "enterToggle"},{type: "spriteChange", id: "mitsuhiro/Mitsuhiro_Despair"}], autoNext: true, dialogueAutoNext: true, wait: 1000}]},
+    {name: "", lines: [{segments: [{text: " "}], event: [{type: "diaChange", id: "dialogue"},{type: "diaToggle"}]}]},
+    {name: "ナレーション", lines: [{segments: [{text: "ツカゴエは現状に絶望していた。"}], event: [{type: "enterToggle"}]}]}
 ]
