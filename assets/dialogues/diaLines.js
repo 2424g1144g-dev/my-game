@@ -68,5 +68,8 @@ DIALOGUE_LINES.watchOpening = [
     {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "はは...おもろいなぁ...ホンマに..."}]}]},
     {name: "", lines: [{segments: [{text: " "}], event: [{type: "diaToggle"},{type: "enterToggle"},{type: "spriteChange", id: "mitsuhiro/Mitsuhiro_Despair"}], autoNext: true, dialogueAutoNext: true, wait: 1000}]},
     {name: "", lines: [{segments: [{text: " "}], event: [{type: "diaChange", id: "dialogue"},{type: "diaToggle"}], autoNext: true, dialogueAutoNext: true, wait: 100}]},
-    {name: "ナレーション", lines: [{segments: [{text: "ツカゴエは現状に絶望していた。"}], event: [{type: "enterToggle"}]}]}
+    {name: "ナレーション", lines: [{segments: [{text: "ツカゴエは現状に絶望していた。", class: "green"}], event: [{type: "enterToggle"}]}]},
+    {name: "ナレーション", lines: [{segments: [{text: "周りを見てもどこも森や海が広がっているだけ。", class: "green"}]}]},
+    {name: "ナレーション", lines: [{segments: [{text: "しばらく砂浜で呆然としたのち、", class: "green"}],
+                                   {segments: [{text: "死を避けるため拠点を作り、サバイバル生活を行うのだった。", class: "green"}]}}]}
 ]
