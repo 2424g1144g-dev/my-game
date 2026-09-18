@@ -31,7 +31,7 @@ window.DIALOGUE_EVENTS = {
         console.warn("ダイアログが見つかりません:", event.id);
       }
     }, 0);
-  }
+  },
 
   background: (event) => {
     changeBackground(event.id, event.fade);
