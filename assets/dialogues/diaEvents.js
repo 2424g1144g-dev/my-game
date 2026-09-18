@@ -21,7 +21,7 @@ window.DIALOGUE_EVENTS = {
   diaStarts: (event) => {
     // 1. 動いているタイマーを強制停止
     clearInterval(DIALOGUE.timer);
-    DIALOGUE.isTyping = false;
+    DIALOGUE.isTyping = true;
   
     // 2. setTimeout で現在の処理ループが終わってから次のダイアログを開始する
     setTimeout(() => {
