@@ -18,6 +18,21 @@ window.DIALOGUE_EVENTS = {
     DIALOGUE.start(DIALOGUE_LINES[event.id]);
   },
 
+  diaStarts: (event) => {
+    // 1. 動いているタイマーを強制停止
+    clearInterval(DIALOGUE.timer);
+    DIALOGUE.isTyping = false;
+  
+    // 2. setTimeout で現在の処理ループが終わってから次のダイアログを開始する
+    setTimeout(() => {
+      if (DIALOGUE_LINES[event.id]) {
+        DIALOGUE.start(DIALOGUE_LINES[event.id]);
+      } else {
+        console.warn("ダイアログが見つかりません:", event.id);
+      }
+    }, 0);
+  }
+
   background: (event) => {
     changeBackground(event.id, event.fade);
   },

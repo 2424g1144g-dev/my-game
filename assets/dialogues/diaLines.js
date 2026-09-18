@@ -72,8 +72,8 @@ DIALOGUE_LINES.watchOpening = [
     {name: "ナレーション", lines: [{segments: [{text: "周りを見てもどこも森や海が広がっているだけ。", class: "green"}]}]},
     {name: "ナレーション", lines: [{segments: [{text: "しばらく砂浜で呆然としたのち、", class: "green"}]},
                                    {segments: [{text: "死を避けるため拠点を作り、サバイバル生活を行うのだった。", class: "green"}]}]},
-    {name: " ", lines: [{segments: [{text: " "}], event: [{type: "diaToggle"},{type: "enterToggle"},{type: "spriteChange", id: "none"},{type: "background", id: "none", fade: 300}], autoNext: true, dialogueAutoNext: true, wait: 2000}]},
-    {name: " ", lines: [{segments: [{text: " "}], event: [{type: "diaStart", id: "tutorial"},{type: "diaToggle"}]}]},
+    {name: " ", lines: [{segments: [{text: " "}], event: [{type: "diaToggle"},{type: "enterToggle"},{type: "spriteChange", id: "none"},{type: "background", id: "none", fade: 300}], autoNext: true, dialogueAutoNext: true, wait: 1500}]},
+    {name: " ", lines: [{segments: [{text: " "}], event: [{type: "diaStarts", id: "tutorial"},{type: "diaToggle"}]}]},
 ];
 
 DIALOGUE_LINES.tutorial = [
