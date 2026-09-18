@@ -67,6 +67,6 @@ DIALOGUE_LINES.watchOpening = [
                                           {segments: [{text: "ウソやろそんなアニメみたいなことあるんか！？"}]}]},
     {name: "ツカゴエ　ミツヒロ", lines: [{segments: [{text: "はは...おもろいなぁ...ホンマに..."}]}]},
     {name: "", lines: [{segments: [{text: " "}], event: [{type: "diaToggle"},{type: "enterToggle"},{type: "spriteChange", id: "mitsuhiro/Mitsuhiro_Despair"}], autoNext: true, dialogueAutoNext: true, wait: 1000}]},
-    {name: "", lines: [{segments: [{text: " "}], event: [{type: "diaChange", id: "dialogue"},{type: "diaToggle"}]}]},
+    {name: "", lines: [{segments: [{text: " "}], event: [{type: "diaChange", id: "dialogue"},{type: "diaToggle"}], autoNext: true, dialogueAutoNext: true, wait: 100}]},
     {name: "ナレーション", lines: [{segments: [{text: "ツカゴエは現状に絶望していた。"}], event: [{type: "enterToggle"}]}]}
 ]
