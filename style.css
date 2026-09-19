@@ -575,6 +575,7 @@ pointer-events: none;
 /* ボタン全体のコンテナ（位置決めの基準） */
 .diamond-btn-container {
   position: relative;
+  top: 75vw;
   display: inline-block;
   width: 120px;   /* ひし形の横幅（必要に応じて調整） */
   height: 120px;  /* ひし形の縦幅（必要に応じて調整） */
@@ -618,7 +619,8 @@ pointer-events: none;
   color: #333;
   font-weight: bold;
   -webkit-text-stroke: white 2px;
-  font-size: 30px;
+  font-family: "text";
+  font-size: 50px;
   z-index: 700;                  /* ひし形より前面に重ねる */
 }
 .diamond-btn-container:hover .diamond-shape {
