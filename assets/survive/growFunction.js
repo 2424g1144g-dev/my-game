@@ -1,5 +1,5 @@
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
-surviveStart = async function () {
+window.surviveStart = async function () {
   const log = document.getElementById("dialogue");
   log.classList.remove("show");
   changeBackground("landscapeHouse", 300);
