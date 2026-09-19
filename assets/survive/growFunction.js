@@ -1,5 +1,6 @@
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 window.surviveStart = async function () {
+  console.log("スタート");
   const log = document.getElementById("dialogue");
   log.classList.remove("show");
   changeBackground("landscapeHouse", 300);
