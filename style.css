@@ -582,7 +582,6 @@ pointer-events: none;
   text-decoration: none;
   cursor: pointer;
   /* ホバー時の「上に少し上げる」「背景色変化」のアニメーション設定 */
-  transition: transform 0.3s, background-color 0.3s;
 }
 .diamond-shape {
   position: absolute;
@@ -593,7 +592,8 @@ pointer-events: none;
   background-color: #e9ae2f; /* 通常時の背景色 */
   transform: rotate(45deg);  /* 45度回転してひし形に */
   border-radius: 4px;        /* 好みで角を少し丸める（不要なら削除） */
-  transition: background-color 0.3s;
+  /* アニメーションの対象を「背景色」と「影」だけにする */
+  transition: background-color 0.3s, box-shadow 0.3s; 
   z-index: 600;
 }
 .diamond-icon {
@@ -621,12 +621,8 @@ pointer-events: none;
   font-size: 30px;
   z-index: 700;                  /* ひし形より前面に重ねる */
 }
-/* ボタン全体を少し上に上げる */
-  .diamond-btn-container:hover {
-      transform: translateY(-8px);
-  }
-
-  /* ひし形の背景色を変化させる */
-  .diamond-btn-container:hover .diamond-shape {
-      background-color: #f3ca78; /* ホバー時の背景色 */
-  }
+.diamond-btn-container:hover .diamond-shape {
+  background-color: #c89220; 
+  /* ひし形が45度回転しているため、真下に影を落とすには「5px 5px」のように斜めに指定します */
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3); 
+}
