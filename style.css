@@ -19,6 +19,10 @@ body {
   font-family: "text";
   src: url("assets/fonts/NekoSpoon.ttf");
 }
+@font-face {
+  font-family: "mouhitsu";
+  src: url("assets/fonts/mouhitsu.ttf") format("truetype");
+}
 #first {
   position: absolute;
   display: flex;
