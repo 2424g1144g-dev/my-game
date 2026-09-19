@@ -563,10 +563,65 @@ body {
   height: 17vh;
   left: 0;
   top: 83vh;
-  background: burlywood;
+  background: #ff4757;
   border: 2px solid yellow;
   border-left: none;
   border-right: none;
   border-bottom: none;
   z-index: 500;
 }
+
+/* ボタン全体のコンテナ（位置決めの基準） */
+.diamond-btn-container {
+  position: relative;
+  display: inline-block;
+  width: 120px;   /* ひし形の横幅（必要に応じて調整） */
+  height: 120px;  /* ひし形の縦幅（必要に応じて調整） */
+  margin: 30px;   /* 周囲の余白 */
+  text-decoration: none;
+  cursor: pointer;
+  /* ホバー時の「上に少し上げる」「背景色変化」のアニメーション設定 */
+  transition: transform 0.3s, background-color 0.3s;
+}
+.diamond-shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e9ae2f; /* 通常時の背景色 */
+  transform: rotate(45deg);  /* 45度回転してひし形に */
+  border-radius: 4px;        /* 好みで角を少し丸める（不要なら削除） */
+  transition: background-color 0.3s;
+  z-index: 600;
+}
+.diamond-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 完全に中央配置 */
+  width: 40px;  /* アイコン画像のサイズ */
+  height: 40px; /* アイコン画像のサイズ */
+  object-fit: contain;
+  z-index: 650;   /* ひし形より前面に重ねる */
+}
+.diamond-text {
+  position: absolute;
+  bottom: -25px; /* ひし形の下部から外側にはみ出させる距離 */
+  left: 50%;
+  transform: translateX(-50%); /* 左右の中央配置 */
+  white-space: nowrap;         /* 文字の自動改行を防ぐ */
+  font-weight: bold;
+  color: #333;
+  font-size: 14px;
+  z-index: 2;                  /* ひし形より前面に重ねる */
+}
+/* ボタン全体を少し上に上げる */
+  .diamond-btn-container:hover {
+      transform: translateY(-8px);
+  }
+
+  /* ひし形の背景色を変化させる */
+  .diamond-btn-container:hover .diamond-shape {
+      background-color: #0056b3; /* ホバー時の背景色 */
+  }
