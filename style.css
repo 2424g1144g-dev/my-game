@@ -603,6 +603,7 @@ body {
   width: 150px;  /* アイコン画像のサイズ */
   height: 150px; /* アイコン画像のサイズ */
   object-fit: contain;
+  pointer-events: none;
   z-index: 650;   /* ひし形より前面に重ねる */
 }
 .diamond-text {
@@ -612,6 +613,7 @@ body {
   transform: translateX(-50%); /* 左右の中央配置 */
   white-space: nowrap;         /* 文字の自動改行を防ぐ */
   font-weight: bold;
+  pointer-events: none;
   color: #333;
   font-size: 30px;
   z-index: 700;                  /* ひし形より前面に重ねる */
