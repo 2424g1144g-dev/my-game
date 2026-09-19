@@ -615,6 +615,8 @@ body {
   font-weight: bold;
   pointer-events: none;
   color: #333;
+  font-weight: bold;
+  -webkit-text-stroke: white 2px;
   font-size: 30px;
   z-index: 700;                  /* ひし形より前面に重ねる */
 }
