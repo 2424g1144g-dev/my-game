@@ -74,9 +74,9 @@ DIALOGUE_LINES.watchOpening = [
                                    {segments: [{text: "死を避けるため拠点を作り、サバイバル生活を行うのだった。", class: "green"}]}]},
     {name: " ", lines: [{segments: [{text: " "}], event: [{type: "diaToggle"},{type: "enterToggle"},{type: "spriteChange", id: "none"},{type: "background", id: "none", fade: 300}], autoNext: true, dialogueAutoNext: true, wait: 1500}]},
     {name: " ", lines: [{segments: [{text: " "}], event: [{type: "diaToggle"}], autoNext: true, dialogueAutoNext: true, wait: 500}]},
-    {name: "ナレーション", lines: [{segments: [{text: "チュートリアルを確認しますか？"}]}]}
+    {name: "ナレーション", lines: [{segments: [{text: "チュートリアルを確認しますか？", class: "green"}]}]}
 ];
 
 DIALOGUE_LINES.tutorial = [
-    {name: "ナレーション", lines: [{segments: [{text: "チュートリアルを確認しますか？"}]}]}
+    {name: "ナレーション", lines: [{segments: [{text: "チュートリアルを確認しますか？", class: "green"}], event: [{type: "choice", choices: [{text: "確認する", target: tutorial, "確認しない", target: start}]}]}]}
 ];
