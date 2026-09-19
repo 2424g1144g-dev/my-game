@@ -78,5 +78,5 @@ DIALOGUE_LINES.watchOpening = [
 ];
 
 DIALOGUE_LINES.tutorial = [
-    {name: "ナレーション", lines: [{segments: [{text: "チュートリアルを確認しますか？", class: "green"}], event: [{type: "choice", choices: [{text: "確認する", target: tutorial},{text: "確認しない", target: start}]}]}]}
+    {name: "ナレーション", lines: [{segments: [{text: "チュートリアルを確認しますか？", class: "green"}], event: [{type: "choice", choices: [{text: "確認する", target: tutorial},{text: "確認しない", target: surviveStart}]}]}]}
 ];

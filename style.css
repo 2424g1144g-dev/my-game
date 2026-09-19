@@ -428,3 +428,122 @@ body {
   pointer-events: none;
   z-index: 3000;
 }
+
+
+
+
+#debate  {
+  position: absolute;
+  top: 20vh;
+  left: -25px;
+  pointer-events: none;
+  width: max-content;
+  position: absolute;
+  display: inline-block;
+  color: white;
+  font-family: "mouhitsu";
+  z-index: 30000;
+  letter-spacing: -90px;
+  transform: translateX(0);
+  text-shadow:
+    0 0 10px rgb(255 0 0 / 80%),  /* 1層目: 文字のキワをクッキリ光らせる */
+    0 0 20px rgb(164 49 49 / 80%),  /* 2層目: 少し広げて青みを強く */
+    0 0 40px rgb(234 32 88 / 60%),   /* 3層目: さらに外側へ大きくぼかす */
+    0 0 60px rgb(197 23 73 / 40%);
+  
+}
+.runAway {
+  animation: runAway 0.25s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+#debate span {
+  display: inline-block;
+  opacity: 0;
+  position: relative;
+  z-index: 30000;
+}
+#debate span:nth-child(1) { position: relative; top: 30px; font-size: 450px; letter-spacing: -250px; z-index: 30000;}
+#debate span:nth-child(2) { position: relative; top: 0; font-size: 230px; letter-spacing: -110px; z-index: 30000;}
+#debate span:nth-child(3) { position: relative; top: -35px; font-size: 250px; letter-spacing: -130px; z-index: 30000;}
+#debate span:nth-child(4) { position: relative; top: 0; font-size: 230px; letter-spacing: -100px; z-index: 30000;}
+#debate span:nth-child(5) { position: relative; top: -50px; font-size: 200px; letter-spacing: -140px; z-index: 30000;}
+#debate span:nth-child(6) { position: relative; top: -20px; font-size: 320px; letter-spacing: -160px; z-index: 30000;}
+#debate span:nth-child(7) { position: relative; top: 0; font-size: 220px; letter-spacing: -50px; z-index: 30000;}
+#debate span:nth-child(8) { position: relative; top: 0; font-size: 340px; z-index: 30000;}
+/* --- 1文字ずつ左からスッと出現するアニメーション --- */
+.appear {
+  animation: appearAnim 0.4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes appearAnim {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px) skewX(-20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) skewX(-20deg); /* skewXを維持してスタイリッシュに */
+  }
+}
+
+/* --- 右にスッと消えるアニメーション --- */
+@keyframes runAway {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(1200px);
+    opacity: 0;
+  }
+}
+#startDebate {
+  position: absolute;
+  top: 30vh;
+  left: 30%;
+  pointer-events: none;
+  font-family: "mouhitsu";
+  font-size: 300px;
+  width: max-content;
+  color: rgb(249, 161, 161);
+  z-index: 31000;
+  letter-spacing: -100px;
+  opacity: 0;
+  text-shadow:
+    0 0 10px rgb(255 0 0 / 80%),  /* 1層目: 文字のキワをクッキリ光らせる */
+    0 0 20px rgb(164 49 49 / 80%),  /* 2層目: 少し広げて青みを強く */
+    0 0 40px rgb(234 32 88 / 60%),   /* 3層目: さらに外側へ大きくぼかす */
+    0 0 60px rgb(197 23 73 / 40%);
+}
+.startAnim { animation: startAnim 0.4s linear; }
+@keyframes startAnim {
+  0% { opacity: 1; transform: scale(1.0);}
+  10% { opacity: 1; transform: scale(1.3);}
+  30% { opacity: 1; transform: scale(1.4);}
+  50% { opacity: 1; transform: scale(1.5); color: rgb(206, 104, 104);}
+  90% { opacity: 1; transform: scale(2.0); color: rgb(101, 13, 13);}
+  100% { opacity: 0; transform: scale(2.0); color:rgb(101, 13, 13);}
+}
+#circleDebate {
+  position: absolute;
+  left: 50vw;
+  top: 50vh;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  width: 500px;
+  height: 500px;
+  filter: blur(3px);
+  opacity: 0;
+  box-shadow:
+    0 0 10px red,
+    0 0 20px red;
+  border: 2px solid rgb(216, 44, 41);
+  border-radius: 50%;
+  z-index: 29000;
+}
+.zoomDisappear {
+  animation: zoomDisappear 0.7s linear;
+}
+@keyframes zoomDisappear {
+  from {opacity: 1; transform: translate(-50%, -50%) scale(1.0);}
+  to {opacity: 0; transform: translate(-50%, -50%) scale(1.5);}
+}
