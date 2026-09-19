@@ -29,3 +29,7 @@ function start() {
     DIALOGUE.start(DIALOGUE_LINES.opening);
   }, 2500);
 }
+
+function tutorial() {
+  console.log("チュートリアル開始");
+}
