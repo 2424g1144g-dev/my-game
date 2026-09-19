@@ -614,7 +614,7 @@ body {
   font-weight: bold;
   color: #333;
   font-size: 14px;
-  z-index: 2;                  /* ひし形より前面に重ねる */
+  z-index: 700;                  /* ひし形より前面に重ねる */
 }
 /* ボタン全体を少し上に上げる */
   .diamond-btn-container:hover {
