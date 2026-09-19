@@ -551,3 +551,19 @@ body {
   from {opacity: 1; transform: translate(-50%, -50%) scale(1.0);}
   to {opacity: 0; transform: translate(-50%, -50%) scale(1.5);}
 }
+
+
+
+#trainingUI {
+  opacity: 1;
+}
+#selectBG {
+  position: absolute;
+  width: 100vh;
+  height: 17vh;
+  left: 0;
+  top: 100vh;
+  background: burlywood;
+  border: 2px solid yellow;
+  z-index: 500;
+}
