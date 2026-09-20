@@ -624,9 +624,12 @@ pointer-events: none;
   font-size: 50px;
   z-index: 700;                  /* ひし形より前面に重ねる */
 }
-.diamond-btn-container:hover .diamond-shape .diamond-icon {
-  transform: translateY(-8px) rotate(45deg);
+.diamond-btn-container:hover .diamond-shape {
+  transform: rotate(45deg) translateY(-8px) scale(1.05);
   background-color: #c89220; 
-  /* ひし形が45度回転しているため、真下に影を落とすには「5px 5px」のように斜めに指定します */
   box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3); 
 }
+.diamond-btn-container:hover .diamond-icon {
+  transform: translate(-50%, calc(-50% - 8px)) scale(1.05); 
+}
+
