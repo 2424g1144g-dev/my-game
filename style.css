@@ -564,7 +564,7 @@ pointer-events: none;
   height: 17vh;
   left: 0;
   top: 83vh;
-  background: #ff4757;
+  background: #e1081a;
   border: 2px solid yellow;
   border-left: none;
   border-right: none;
@@ -642,7 +642,7 @@ pointer-events: none;
   height: 100px;
   border-radius: 100px;
   border: 2px solid yellow;
-  background: #ff4757;
+  background: #e1081a;
   z-index: 1000;
 }
 
