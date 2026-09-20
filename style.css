@@ -633,3 +633,16 @@ pointer-events: none;
   transform: translate(-50%, calc(-50% - 8px)) scale(1.05); 
 }
 
+
+#topBG {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 450px;
+  height: 150px;
+  border-radius: 40px;
+  border: 2px solid yellow;
+  background: #ff4757;
+  z-index: 1000;
+}
+
