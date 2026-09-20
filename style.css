@@ -652,8 +652,10 @@ pointer-events: none;
 #day {
   position: relative;
   left: 40px;
-  top: 20px;
+  top: 10px;
+  color: black;
   font-family: "alphabet";
   font-size: 15px;
+  font-weight: bold;
   z-index: 1100;
 }
