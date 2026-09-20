@@ -579,7 +579,7 @@ pointer-events: none;
 /* ボタン全体のコンテナ（位置決めの基準） */
 .diamond-btn-container {
   position: relative;
-  top: 42vw;
+  top: 39vw;
   display: inline-block;
   width: 120px;
   height: 120px;
