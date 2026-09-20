@@ -668,7 +668,7 @@ pointer-events: none;
   display: flex;
   align-items: center;
   gap: 12px; /* 肉マークとゲージの間隔 */
-  /* ★背景の白、丸枠、影をすべて削除しました */
+  z-index: 1200;
 }
 
 /* 肉マーク（絵文字）のスタイル */
