@@ -618,7 +618,7 @@ pointer-events: none;
   pointer-events: none;
   color: #333;
   font-weight: bold;
-  -webkit-text-stroke: white 1px;
+  -webkit-text-stroke: white 0.1px;
   font-family: "text";
   font-size: 50px;
   z-index: 700;                  /* ひし形より前面に重ねる */
