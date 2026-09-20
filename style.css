@@ -659,3 +659,39 @@ pointer-events: none;
   font-weight: bold;
   z-index: 1100;
 }
+
+/* ゲージのコンテナ */
+.gauge-container {
+  position: relative;
+  left: 20px;
+  top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px; /* 肉マークとゲージの間隔 */
+  /* ★背景の白、丸枠、影をすべて削除しました */
+}
+
+/* 肉マーク（絵文字）のスタイル */
+.meat-icon {
+  font-size: 28px;
+  line-height: 1;
+}
+
+/* ゲージの土台（背景のグレー部分） */
+.gauge-track {
+  width: 200px;
+  height: 16px;
+  background-color: #e0e0e0; /* ゲージの空欄部分の色（不要ならここも変更できます） */
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* ゲージの中身（色がついている部分） */
+.gauge-fill {
+  height: 100%;
+  width: 70%; /* ここの数値（%）を変えるとゲージの量が変わります */
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
