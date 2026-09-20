@@ -696,6 +696,6 @@ pointer-events: none;
 }
 
 #islandStrength {
-  position: relative;
+  position: absolute;
   z-index: 1200;
 }
