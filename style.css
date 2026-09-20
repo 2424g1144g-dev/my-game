@@ -662,7 +662,7 @@ pointer-events: none;
 
 /* ゲージのコンテナ */
 .gauge-container {
-  position: relative;
+  position: absolute;
   left: -150px;
   display: flex;
   align-items: center;
