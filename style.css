@@ -653,7 +653,7 @@ pointer-events: none;
   position: relative;
   left: 40px;
   top: 7px;
-  color: black;
+  color: white;
   font-family: "alphabet";
   font-size: 20px;
   font-weight: bold;
@@ -681,7 +681,7 @@ pointer-events: none;
 .gauge-track {
   width: 200px;
   height: 16px;
-  background-color: #e0e0e0; /* ゲージの空欄部分の色（不要ならここも変更できます） */
+  background-color: #938c8c; /* ゲージの空欄部分の色（不要ならここも変更できます） */
   border-radius: 10px;
   overflow: hidden;
   position: relative;
@@ -697,7 +697,7 @@ pointer-events: none;
 
 #islandStrength {
   position: absolute;
-  left: 150px;
+  left: 250px;
   top: 40px;
   transform: scale(1.2);
   z-index: 1200;
