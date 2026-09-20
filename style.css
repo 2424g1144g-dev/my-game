@@ -23,6 +23,10 @@ body {
   font-family: "mouhitsu";
   src: url("assets/fonts/mouhitsu.ttf") format("truetype");
 }
+@font-face {
+  font-family: "alphabet";
+  src: url("assets/fonts/Makinas-4-Square.otf");
+}
 #first {
   position: absolute;
   display: flex;
@@ -645,4 +649,11 @@ pointer-events: none;
   background: #e1081a;
   z-index: 1000;
 }
-
+#day {
+  position: relative;
+  left: 40px;
+  top: 20px;
+  font-family: "alphabet";
+  font-size: 15px;
+  z-index: 1100;
+}
