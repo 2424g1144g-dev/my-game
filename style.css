@@ -624,7 +624,7 @@ pointer-events: none;
   font-size: 50px;
   z-index: 700;                  /* ひし形より前面に重ねる */
 }
-.diamond-btn-container:hover .diamond-shape .diamond-icon{
+.diamond-btn-container:hover .diamond-shape .diamond-icon {
   transform: translateY(-8px) rotate(45deg);
   background-color: #c89220; 
   /* ひし形が45度回転しているため、真下に影を落とすには「5px 5px」のように斜めに指定します */
