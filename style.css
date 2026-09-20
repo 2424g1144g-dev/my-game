@@ -668,6 +668,7 @@ pointer-events: none;
   align-items: center;
   gap: 12px; /* 肉マークとゲージの間隔 */
   z-index: 1200;
+  transform: scale(0.7);
 }
 
 /* 肉マーク（絵文字）のスタイル */
