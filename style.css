@@ -663,7 +663,7 @@ pointer-events: none;
 /* ゲージのコンテナ */
 .gauge-container {
   position: relative;
-  left: 20px;
+  left: -150px;
   display: flex;
   align-items: center;
   gap: 12px; /* 肉マークとゲージの間隔 */
