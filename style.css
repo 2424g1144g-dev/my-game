@@ -723,13 +723,30 @@ pointer-events: none;
   z-index: 1500;
 }
 .equDesc {
+  display: flex;
   width: 50px;
   height: 40px;
   font-family: "text";
   font-size: 20px;
+  text-align: center;
+  justify-content: center;
   z-index: 1600;
   border: 2px solid yellow;
   border-left: none;
   border-top: none;
   border-bottom: none;
+  flex-direction: column;
+}
+.equDesc {
+  position: relative;
+  left: 40px;
+  display: flex;
+  width: 200px;
+  height: 40px;
+  font-family: "text";
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  z-index: 1600;
+  flex-direction: column;
 }
