@@ -736,6 +736,8 @@ pointer-events: none;
   border-top: none;
   border-bottom: none;
   flex-direction: column;
+  font-stretch: condensed;
+  text-wrap: nowrap;
 }
 .equName {
   position: relative;
