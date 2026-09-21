@@ -702,7 +702,7 @@ pointer-events: none;
   transform: scale(1.2);
   z-index: 1200;
 }
-.class {
+.status {
   position: absolute;
   top: 40px;
   transform: scale(1.3);
