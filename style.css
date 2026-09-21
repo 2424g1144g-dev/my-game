@@ -737,7 +737,7 @@ pointer-events: none;
   border-bottom: none;
   flex-direction: column;
 }
-.equDesc {
+.equName {
   position: relative;
   left: 40px;
   display: flex;
