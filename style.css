@@ -740,6 +740,7 @@ pointer-events: none;
 .equName {
   position: relative;
   left: 40px;
+  top: -39px;
   display: flex;
   width: 200px;
   height: 40px;
