@@ -712,11 +712,22 @@ pointer-events: none;
 
 .equipmentContainer {
   position: absolute;
-  left: 1200px;
-  width: 300px;
-  height: 70px;
+  left: 1100px;
+  width: 250px;
+  height: 40px;
   pointer-events: none;
   background: #e1081a;
   border: 2px solid yellow;
   z-index: 1500;
+}
+.equDesc {
+  width: 50px;
+  height: 40px;
+  font-family: "text";
+  font-size: 20px;
+  z-index: 1600;
+  border: 2px solid yellow;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
 }
