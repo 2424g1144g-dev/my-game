@@ -712,6 +712,7 @@ pointer-events: none;
 
 .equipmentContainer {
   position: absolute;
+  display: flex;
   left: 1100px;
   width: 250px;
   height: 40px;
