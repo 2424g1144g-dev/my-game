@@ -42,5 +42,5 @@ window.surviveStart = async function () {
 
 
 mainLoop = async function() {
-  while
+  console.log("メインループ");
 }
