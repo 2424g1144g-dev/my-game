@@ -27,4 +27,9 @@ window.surviveStart = async function () {
     });
   }
   window.nonstopDebateStart();
+  await sleep(4000);
+  const top = document.getElementById("trainingTopCon");
+  const bottom = document.getLementById("trainingBottomCon");
+  top.classList.add("show");
+  bottom.classList.add("show");
 }
