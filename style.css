@@ -767,10 +767,10 @@ pointer-events: none;
 
 #trainingTopCon {
   position:relative;
+  top: -200px;
   opacity: 1;
-  transition: transform 0.5s linear;
+  transition: top 0.5s linear;
 }
 #trainingTopCon.show {
   top: 0;
-  opacity: 1;
 }
