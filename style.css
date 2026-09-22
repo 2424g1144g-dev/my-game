@@ -764,3 +764,11 @@ pointer-events: none;
   font-family: 'text';
   padding: 5px;
 }
+
+#tranningTopCon {
+  opacity: 0;
+  transition: opacity 0.5s linear;
+}
+#trainingTopCon.show {
+  opacity: 1;
+}
