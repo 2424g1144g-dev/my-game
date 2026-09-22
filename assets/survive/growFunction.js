@@ -1,4 +1,13 @@
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+//ステータス
+let hp = 34; const hpEl = document.getElementById("HP"); hpEl.textContent = hp;
+let maxHp = 34; const mhpEl = document.getElementById("maxHP"); mhpEl.textContent = maxHp;
+let sp = 13; const spEl = document.getElementById("SP"); spEl.textContent = sp;
+let maxSp = 13; const mSpEl = document.getElementById("maxSP"); mSpEl.textContent = maxSp;
+
+
+
 window.surviveStart = async function () {
   console.log("スタート");
   const log = document.getElementById("dialogue");
@@ -28,8 +37,10 @@ window.surviveStart = async function () {
   }
   window.nonstopDebateStart();
   await sleep(4000);
-  const top = document.getElementById("trainingTopCon");
-  const bottom = document.getLementById("trainingBottomCon");
-  top.classList.add("show");
-  bottom.classList.add("show");
+  mainLoop();
+}
+
+
+mainLoop = async function() {
+  while
 }
