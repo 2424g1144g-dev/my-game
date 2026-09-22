@@ -769,8 +769,16 @@ pointer-events: none;
   position:relative;
   top: -200px;
   opacity: 1;
-  transition: top 0.5s linear;
+  transition: top 0.5s ease-out;
 }
 #trainingTopCon.show {
+  top: 0;
+}
+#traininigBottomCon {
+  position: relative;
+  top: 200px;
+  transition: top 0.5s ease-out;
+}
+#trainingBottomCon {
   top: 0;
 }
