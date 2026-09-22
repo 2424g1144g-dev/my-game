@@ -765,7 +765,7 @@ pointer-events: none;
   padding: 5px;
 }
 
-#tranningTopCon {
+#trainingTopCon {
   opacity: 0;
   transition: opacity 0.5s linear;
 }
