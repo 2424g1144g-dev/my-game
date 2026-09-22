@@ -774,7 +774,7 @@ pointer-events: none;
 #trainingTopCon.show {
   top: 0;
 }
-#traininigBottomCon {
+#trainingBottomCon {
   position: relative;
   top: 200px;
   transition: top 0.5s ease-out;
