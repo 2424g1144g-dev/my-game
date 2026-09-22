@@ -753,3 +753,10 @@ pointer-events: none;
   z-index: 1600;
   flex-direction: column;
 }
+#house {
+  position: absolute;
+  left: 300px;
+  top: 125px;
+  z-index: 1600;
+  font-size: scale(1.2);
+}
