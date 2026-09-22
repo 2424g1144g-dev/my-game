@@ -779,6 +779,6 @@ pointer-events: none;
   top: 200px;
   transition: top 0.5s ease-out;
 }
-#trainingBottomCon {
+#trainingBottomCon.show {
   top: 0;
 }
