@@ -53,6 +53,7 @@ mainLoop = async function() {
     top = document.getElementById("trainingTopContainer");
     bottom = document.getElementById("trainingBottomContainer");
     top.classList.add("show");
+    bottom.classList.add("show");
     await sleep(30000);
   }
 }
