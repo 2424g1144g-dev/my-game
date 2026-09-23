@@ -782,3 +782,14 @@ pointer-events: none;
 #trainingBottomCon.show {
   top: 0;
 }
+
+.practice-btn-container {
+  position: relative;
+  top: 42vw;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  margin: 30px;
+  text-decoration: none;
+  cursor: pointer;
+}

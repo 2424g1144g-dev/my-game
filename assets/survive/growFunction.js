@@ -13,6 +13,10 @@ let int = 12; const intEl = document.getElementById("INT"); intEl.textContent = 
 let hit = 100;
 let dod = 7;
 
+const top = document.getElementById("trainingTopCon");
+const bottom = document.getElementById("trainingBottomCon");
+const btn = document.querySelector(".diamond-btn-container");
+
 
 
 window.surviveStart = async function () {
@@ -49,11 +53,14 @@ window.surviveStart = async function () {
 
 
 mainLoop = async function() {
-  while (hp > 0) {
-    const top = document.getElementById("trainingTopCon");
-    const bottom = document.getElementById("trainingBottomCon");
-    top.classList.add("show");
-    bottom.classList.add("show");
-    await sleep(30000);
-  }
+  top.classList.add("show");
+  bottom.classList.add("show");
+  btn.disabled = false;
+}
+
+practice = async function() {
+  bottom.classList.remove("show");
+  btn.disabled = true;
+  await sleep(500);
+  
 }
