@@ -793,3 +793,11 @@ pointer-events: none;
   text-decoration: none;
   cursor: pointer;
 }
+.practice-btn-container:hover .diamond-shape {
+  transform: rotate(45deg) translateY(-8px) scale(1.05);
+  background-color: #c89220; 
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3); 
+}
+.practice-btn-container:hover .diamond-icon {
+  transform: translate(-50%, calc(-50% - 8px)) scale(1.05); 
+}

@@ -10,8 +10,8 @@ let atk = 7; const atkEl = document.getElementById("ATK"); atkEl.textContent = a
 let def = 10; const defEl = document.getElementById("DEF"); defEl.textContent = def;
 let agi = 6; const agiEl = document.getElementById("AGI"); agiEl.textContent = agi;
 let int = 12; const intEl = document.getElementById("INT"); intEl.textContent = int;
-let hit = 100;
-let dod = 7;
+let dex = 7; const edxEl = document.getElementById("DEX"); dexEl.textContent = dex;
+let spi = 5; const spiEl = document.getElementById("SPI"); spiEl.textContent = spi;
 
 const topUI = document.getElementById("trainingTopCon");
 const bottomUI = document.getElementById("trainingBottomCon");
