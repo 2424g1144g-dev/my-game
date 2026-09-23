@@ -50,8 +50,8 @@ window.surviveStart = async function () {
 
 mainLoop = async function() {
   while (hp > 0) {
-    top = document.getElementById("trainingTopCon");
-    bottom = document.getElementById("trainingBottomCon");
+    const top = document.getElementById("trainingTopCon");
+    const bottom = document.getElementById("trainingBottomCon");
     top.classList.add("show");
     bottom.classList.add("show");
     await sleep(30000);
