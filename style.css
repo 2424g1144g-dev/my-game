@@ -784,7 +784,7 @@ pointer-events: none;
 }
 
 .practice-btn-container {
-  position: relative;
+  position: absolute;
   top: 42vw;
   display: inline-block;
   width: 120px;
