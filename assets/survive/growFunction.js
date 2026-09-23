@@ -5,6 +5,13 @@ let hp = 34; const hpEl = document.getElementById("HP"); hpEl.textContent = hp;
 let maxHp = 34; const mhpEl = document.getElementById("maxHP"); mhpEl.textContent = maxHp;
 let sp = 13; const spEl = document.getElementById("SP"); spEl.textContent = sp;
 let maxSp = 13; const mSpEl = document.getElementById("maxSP"); mSpEl.textContent = maxSp;
+let XP = 0;
+let atk = 7; const atkEl = document.getElementById("ATK"); atkEl.textContent = atk;
+let def = 10; const defEl = document.getElementById("DEF"); defEl.textContent = def;
+let agi = 6; const agiEl = document.getElementById("AGI"); agiEl.textContent = agi;
+let int = 12; const intEl = document.getElementById("INT"); intEl.textContent = int;
+let hit = 100;
+let dod = 7;
 
 
 
@@ -42,5 +49,10 @@ window.surviveStart = async function () {
 
 
 mainLoop = async function() {
-  console.log("メインループ");
+  while (hp > 0) {
+    top = document.getElementById("trainingTopContainer");
+    bottom = document.getElementById("trainingBottomContainer");
+    top.classList.add("show");
+    await sleep(30000);
+  }
 }
