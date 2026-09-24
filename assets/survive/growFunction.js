@@ -59,7 +59,6 @@ mainLoop = async function() {
   btn.forEach(element => {
     element.classList.add("show");
     element.style.pointerEvents = "auto"; // クリック可能にする
-    await sleep(150);
   });
   // pbtn (NodeList) の各要素に対して処理
   pbtn.forEach(element => {
@@ -68,8 +67,12 @@ mainLoop = async function() {
 }
 
 practice = async function() {
-  btn.disabled = true;
+  btn.forEach(element => {
+    element.classList.remove("show");
+    element.style.pointerEvents = "none";
+  });
   await sleep(500);
-  pbtn.disabled = false;
-  pbtn.classList.add("show");
+  pbtn.forEach(element => {
+    element.style.pointerEvents = "auto";
+  });
 }
