@@ -62,5 +62,4 @@ practice = async function() {
   bottomUI.classList.remove("show");
   btn.disabled = true;
   await sleep(500);
-
 }
