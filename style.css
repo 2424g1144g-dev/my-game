@@ -794,7 +794,6 @@ pointer-events: none;
   text-decoration: none;
   cursor: pointer;
   z-index: 3000;
-  transform: scale(0.9);
 }
 .practice-btn-container:hover .diamond-shape {
   transform: rotate(45deg) translateY(-8px) scale(1.05);
