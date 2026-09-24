@@ -73,6 +73,7 @@ practice = async function() {
   });
   await sleep(500);
   pbtn.forEach(element => {
+    element.classList.add("show");
     element.style.pointerEvents = "auto";
   });
 }
