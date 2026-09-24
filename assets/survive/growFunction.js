@@ -15,8 +15,8 @@ let spi = 5; const spiEl = document.getElementById("SPI"); spiEl.textContent = s
 
 const topUI = document.getElementById("trainingTopCon");
 const bottomUI = document.getElementById("trainingBottomCon");
-const btn = document.querySelector(".diamond-btn-container");
-const pbtn = document.querySelector(".practice-btn-container");
+const btn = document.querySelectorAll(".diamond-btn-container");
+const pbtn = document.querySelectorAll(".practice-btn-container");
 
 
 
