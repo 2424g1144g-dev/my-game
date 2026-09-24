@@ -587,7 +587,7 @@ pointer-events: none;
   text-decoration: none;
   cursor: pointer;
   z-index: 3000;
-  transition: top 0.5s ease-out;
+  transition: top 0.25s ease-out;
 }
 .diamond-btn-container.show {
   top:42vw;
@@ -798,7 +798,7 @@ pointer-events: none;
   text-decoration: none;
   cursor: pointer;
   z-index: 3000;
-  transition: top 0.5s linear;
+  transition: top 0.25s linear;
 }
 .practice-btn-container.show {
   top: 42vw;

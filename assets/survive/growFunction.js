@@ -71,7 +71,7 @@ practice = async function() {
     element.classList.remove("show");
     element.style.pointerEvents = "none";
   });
-  await sleep(500);
+  await sleep(300);
   pbtn.forEach(element => {
     element.classList.add("show");
     element.style.pointerEvents = "auto";
