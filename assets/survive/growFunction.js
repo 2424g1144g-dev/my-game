@@ -16,6 +16,7 @@ let spi = 5; const spiEl = document.getElementById("SPI"); spiEl.textContent = s
 const topUI = document.getElementById("trainingTopCon");
 const bottomUI = document.getElementById("trainingBottomCon");
 const btn = document.querySelector(".diamond-btn-container");
+const pbtn = document.querySelector(".practice-btn-container");
 
 
 
@@ -55,11 +56,14 @@ window.surviveStart = async function () {
 mainLoop = async function() {
   topUI.classList.add("show");
   bottomUI.classList.add("show");
+  btn.classList.add("show");
   btn.disabled = false;
+  pbtn.disabled = true;
 }
 
 practice = async function() {
-  bottomUI.classList.remove("show");
   btn.disabled = true;
   await sleep(500);
+  pbtn.disabled = false;
+  pbtn.classList.add("show");
 }

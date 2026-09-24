@@ -579,7 +579,7 @@ pointer-events: none;
 /* ボタン全体のコンテナ（位置決めの基準） */
 .diamond-btn-container {
   position: relative;
-  top: 42vw;
+  top: 60vw;
   display: inline-block;
   width: 120px;
   height: 120px;
@@ -587,6 +587,10 @@ pointer-events: none;
   text-decoration: none;
   cursor: pointer;
   z-index: 3000;
+  transition: top 0.5s ease-out;
+}
+.diamond-btn-container.show {
+  top:42vw;
 }
 .diamond-shape {
   position: absolute;
@@ -786,7 +790,7 @@ pointer-events: none;
 
 .practice-btn-container {
   position: absolute;
-  top: 42vw;
+  top: 60vw;
   display: inline-block;
   width: 120px;
   height: 120px;
@@ -794,6 +798,10 @@ pointer-events: none;
   text-decoration: none;
   cursor: pointer;
   z-index: 3000;
+  transition: top 0.5s linear;
+}
+.practice-btn-container.show {
+  top: 42vw;
 }
 .practice-btn-container:hover .diamond-shape {
   transform: rotate(45deg) translateY(-8px) scale(1.05);
