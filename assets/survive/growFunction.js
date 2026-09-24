@@ -59,6 +59,7 @@ mainLoop = async function() {
   btn.forEach(element => {
     element.classList.add("show");
     element.style.pointerEvents = "auto"; // クリック可能にする
+    await sleep(150);
   });
   // pbtn (NodeList) の各要素に対して処理
   pbtn.forEach(element => {
