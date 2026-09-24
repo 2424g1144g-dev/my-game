@@ -56,9 +56,14 @@ window.surviveStart = async function () {
 mainLoop = async function() {
   topUI.classList.add("show");
   bottomUI.classList.add("show");
-  btn.classList.add("show");
-  btn.disabled = false;
-  pbtn.disabled = true;
+  btn.forEach(element => {
+    element.classList.add("show");
+    element.style.pointerEvents = "auto"; // クリック可能にする
+  });
+  // pbtn (NodeList) の各要素に対して処理
+  pbtn.forEach(element => {
+    element.style.pointerEvents = "none"; // クリック不可にする
+  });
 }
 
 practice = async function() {
