@@ -70,19 +70,19 @@
         <span style="color: #6c0f0f;"   >戦闘力　</span><span id="fightingPoint">21</span>
       </div>
       <div id="statusQue1" class="status" style="left: 400px;">
-        <span style="color: green;">HP　</span><span id="HP"></span> / <span id="maxHP"></span><br>
-        <span style="color: blue;">SP　</span><span id="SP">19</span> / <span id="maxSP">19</span><br>
-        <span style="color: rgb(183, 255, 0)">XP　</span><span id="XP">0</span>
+        <span style="color: green;">HP　</span><span id="HP"></span> / <span id="maxHP"></span><span>　</span><span id="estimateHP"></span><br>
+        <span style="color: blue;">SP　</span><span id="SP">19</span> / <span id="maxSP">19</span><span>　</span><span id="estimateSP"></span><br>
+        <span style="color: rgb(183, 255, 0)">XP　</span><span id="XP">0</span><span>　</span><span id="estimateXP"></span>
       </div>
       <div id="statusQue2" class="status" style="left: 650px;">
-        <span>🗡️　</span><span id="ATK">7</span><br>
-        <span>🛡️　</span><span id="DEF">10</span><br>
-        <span>👟　</span><span id="AGI">6</span>
+        <span>🗡️　</span><span id="ATK">7</span><span>　</span><span id="estimateATK"></span><br>
+        <span>🛡️　</span><span id="DEF">10</span><span>　</span><span id="estimateDEF"></span><br>
+        <span>👟　</span><span id="AGI">6</span><span>　</span><span id="estimateAGI"></span>
       </div>
       <div id="statusQue3" class="status" style="left: 900px;">
-        <span>🧠　</span><span id="INT">12</span><br>
-        <span>🪡　</span><span id="DEX">9</span><br>
-        <span>🔥　</span><span id="SPI">7</span>
+        <span>🧠　</span><span id="INT">12</span><span>　</span><span id="estimateINT"></span><br>
+        <span>🪡　</span><span id="DEX">9</span><span>　</span><span id="estimateDEX"></span><br>
+        <span>🔥　</span><span id="SPI">7</span><span>　</span><span id="estimateSPI"></span>
       </div>
       <div class="gauge-container" style="left: 20px; top: 50px;">
         <div class="icon">💚</div>
@@ -159,32 +159,32 @@
         <span class="diamond-text">設定</span>
       </div>
 
-      <div class="practice-btn-container" style="left: 2.5vw;" onClick="console.log('体力')">
+      <div id="btnHP" class="practice-btn-container" style="left: 2.5vw;" onClick="console.log('体力')">
         <div class="diamond-shape"></div>
         <img src="assets/icons/heartMascle.png" class="diamond-icon" style="width: 300px;">
         <span class="diamond-text">体力</span>
       </div>
-      <div class="practice-btn-container" style="left: 17.5vw;" onClick="console.log('筋力')">
+      <div id="btnATK" class="practice-btn-container" style="left: 17.5vw;" onClick="console.log('筋力')">
         <div class="diamond-shape"></div>
         <img src="assets/icons/dumbbell.png" class="diamond-icon">
         <span class="diamond-text">筋力</span>
       </div>
-      <div class="practice-btn-container" style="left: 32.5vw;" onClick="console.log('守備力')">
+      <div id="btnDEF" class="practice-btn-container" style="left: 32.5vw;" onClick="console.log('守備力')">
         <div class="diamond-shape"></div>
         <img src="assets/icons/shield.png" class="diamond-icon">
         <span class="diamond-text">守備力</span>
       </div>
-      <div class="practice-btn-container" style="left: 47.5vw;" onClick="console.log('敏捷性')">
+      <div id="btnAGI" class="practice-btn-container" style="left: 47.5vw;" onClick="console.log('敏捷性')">
         <div class="diamond-shape"></div>
         <img src="assets/icons/shoes.png" class="diamond-icon">
         <span class="diamond-text">敏捷性</span>
       </div>
-      <div class="practice-btn-container" style="left: 62.5vw;" onClick="console.log('知力')">
+      <div id="btnINT" class="practice-btn-container" style="left: 62.5vw;" onClick="console.log('知力')">
         <div class="diamond-shape"></div>
         <img src="assets/icons/book.png" class="diamond-icon" style="width: 180px;">
         <span class="diamond-text">知力</span>
       </div>
-      <div class="practice-btn-container" style="left: 77.5vw;" onClick="console.log('精神力')">
+      <div id="btnSPI" class="practice-btn-container" style="left: 77.5vw;" onClick="console.log('精神力')">
         <div class="diamond-shape"></div>
         <img src="assets/icons/spirit.png" class="diamond-icon" style="width: 180px;">
         <span class="diamond-text">精神力</span>

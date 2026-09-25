@@ -76,4 +76,21 @@ practice = async function() {
     element.classList.add("show");
     element.style.pointerEvents = "auto";
   });
+  valueCalculate();
+}
+
+let hpValue, mpvalue, xpValue, atkValue, defValue, agiValue, intValue, dexValue, spiValue;
+const estHp = document.getELementById("estimateHP");
+const practiceAction = {
+  btnHealth: (frame) {
+    hpValue = Math.floor(Math.random() * (15 - 10 + 1)) + 10;
+    mpValue = Math.floor(Math.random() * (7 - 3 + 1)) + 3;
+    spiValue = Math.floor(Math.random() * (4 - 2 + 1)) + 2;
+    xpValue = Math.floor(Math.random() * (500 - 300 + 1)) + 300;
+  }
+}
+let activateId = null;
+let hpUp = 0, spUp = 0, agiUp = 0, intUp = 0, dexUp = 0, spiUp = 0, xpUp = 0;
+function valueCalculate() {
+  console.log("計算を開始");
 }
