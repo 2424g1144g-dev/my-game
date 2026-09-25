@@ -82,7 +82,7 @@ practice = async function() {
 let hpValue, mpvalue, xpValue, atkValue, defValue, agiValue, intValue, dexValue, spiValue;
 const estHp = document.getELementById("estimateHP");
 const practiceAction = {
-  btnHealth: (frame) {
+  btnHealth: (frame) => {
     hpValue = Math.floor(Math.random() * (15 - 10 + 1)) + 10;
     mpValue = Math.floor(Math.random() * (7 - 3 + 1)) + 3;
     spiValue = Math.floor(Math.random() * (4 - 2 + 1)) + 2;
