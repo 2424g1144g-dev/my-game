@@ -804,10 +804,10 @@ pointer-events: none;
   top: 42vw;
 }
 .practice-btn-container:hover .diamond-shape {
-  transform: rotate(45deg) translateX(-20px) scale(1.05);
+  transform: rotate(45deg) translate(-20px, -20px) scale(1.05);
   background-color: #c89220; 
   box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3); 
 }
 .practice-btn-container:hover .diamond-icon {
-  transform: translate(-50%, calc(-50% - 8px)) scale(1.05); 
+  transform: translate(-50%, -100px) scale(1.05); 
 }
