@@ -97,11 +97,37 @@ const practiceAction = {
     spValue = Math.floor(Math.random() * (7 - 3 + 1)) + 3;
     spiValue = Math.floor(Math.random() * (4 - 2 + 1)) + 2;
     xpValue = Math.floor(Math.random() * (500 - 300 + 1)) + 300;
-    
+    estHP.textContent = hpValue;
+    estSP.textContent = spValue;
+    estSpi.textContent = spiValue;
+    estXP.textContent = xpValue;
   }
 }
-let activateId = null;
+let rafId = null;
+let currentAction = null;
+let frameCount = 0;
 let hpUp = 0, spUp = 0, agiUp = 0, intUp = 0, dexUp = 0, spiUp = 0, xpUp = 0;
-function valueCalculate() {
-  console.log("計算を開始");
+function updateLoop() {
+  frameCount++;
+  if (currentAction) currentAction(frameCount);
+  rafId = requestAnimationFrame(updateLoop);
 }
+
+document.querySelectorAll(".diamond-btn-container").forEach(btn => {
+  btn.addEventListener("mouseenter", (e) => {
+    const btnId = e.currentTarget.id;
+    if (buttonActions[btnId]) {
+      currentAction = buttonActions[btnId];
+      frameCount = 0;
+      if (rafId) cancelAnimationFrame(rafId);
+      rafId = requestAnimationFrame(updateLoop);
+    }
+  });
+  btn.addEventListener("mouseleave", () => {
+    if (rafId) {
+      cancelAnimationFrame(rafId);
+      rafId = null;
+    }
+    currentAction = null;
+  });
+});
