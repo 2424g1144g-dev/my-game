@@ -82,12 +82,12 @@ let hpValue, mpvalue, xpValue, atkValue, defValue, agiValue, intValue, dexValue,
 const estHp = document.getELementById("estimateHP");
 const estSp = document.getElementById("estimateSP");
 const estXp = document.getElementById("estimateXp");
-const estAtk = document.getELementById("estimateATK");
-const estDef = document.getELementById("estimateDEF");
-const estAgi = document.getELementById("estimateAGI");
-const estInt = document.getELementById("estimateINT");
-const estDex = document.getELementById("estimateDEX");
-const estSpi = document.getELementById("estimateSPI");
+const estAtk = document.getElementById("estimateATK");
+const estDef = document.getElementById("estimateDEF");
+const estAgi = document.getElementById("estimateAGI");
+const estInt = document.getElementById("estimateINT");
+const estDex = document.getElementById("estimateDEX");
+const estSpi = document.getElementById("estimateSPI");
 
 
 const practiceAction = {
