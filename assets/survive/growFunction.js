@@ -79,7 +79,7 @@ practice = async function() {
 }
 
 let hpValue, mpvalue, xpValue, atkValue, defValue, agiValue, intValue, dexValue, spiValue;
-const estHp = document.getELementById("estimateHP");
+const estHp = document.getElementById("estimateHP");
 const estSp = document.getElementById("estimateSP");
 const estXp = document.getElementById("estimateXp");
 const estAtk = document.getElementById("estimateATK");
