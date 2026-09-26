@@ -76,7 +76,6 @@ practice = async function() {
     element.classList.add("show");
     element.style.pointerEvents = "auto";
   });
-  valueCalculate();
 }
 
 let hpValue, mpvalue, xpValue, atkValue, defValue, agiValue, intValue, dexValue, spiValue;
