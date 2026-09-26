@@ -81,12 +81,23 @@ practice = async function() {
 
 let hpValue, mpvalue, xpValue, atkValue, defValue, agiValue, intValue, dexValue, spiValue;
 const estHp = document.getELementById("estimateHP");
+const estSp = document.getElementById("estimateSP");
+const estXp = document.getElementById("estimateXp");
+const estAtk = document.getELementById("estimateATK");
+const estDef = document.getELementById("estimateDEF");
+const estAgi = document.getELementById("estimateAGI");
+const estInt = document.getELementById("estimateINT");
+const estDex = document.getELementById("estimateDEX");
+const estSpi = document.getELementById("estimateSPI");
+
+
 const practiceAction = {
   btnHealth: (frame) => {
     hpValue = Math.floor(Math.random() * (15 - 10 + 1)) + 10;
-    mpValue = Math.floor(Math.random() * (7 - 3 + 1)) + 3;
+    spValue = Math.floor(Math.random() * (7 - 3 + 1)) + 3;
     spiValue = Math.floor(Math.random() * (4 - 2 + 1)) + 2;
     xpValue = Math.floor(Math.random() * (500 - 300 + 1)) + 300;
+    
   }
 }
 let activateId = null;

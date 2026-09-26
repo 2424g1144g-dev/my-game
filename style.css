@@ -782,6 +782,7 @@ pointer-events: none;
 #trainingBottomCon {
   position: relative;
   top: 200px;
+  pointer-events: none;
   transition: top 0.5s ease-out;
 }
 #trainingBottomCon.show {
