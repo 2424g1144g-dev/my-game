@@ -92,6 +92,7 @@ const estSpi = document.getElementById("estimateSPI");
 
 const practiceAction = {
   btnHealth: (frame) => {
+    console.log("計算中");
     hpValue = Math.floor(Math.random() * (15 - 10 + 1)) + 10;
     spValue = Math.floor(Math.random() * (7 - 3 + 1)) + 3;
     spiValue = Math.floor(Math.random() * (4 - 2 + 1)) + 2;
