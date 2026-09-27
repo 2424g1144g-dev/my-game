@@ -97,10 +97,10 @@ const practiceAction = {
     spValue = Math.floor(Math.random() * (7 - 3 + 1)) + 3;
     spiValue = Math.floor(Math.random() * (4 - 2 + 1)) + 2;
     xpValue = Math.floor(Math.random() * (500 - 300 + 1)) + 300;
-    estHP.textContent = hpValue;
-    estSP.textContent = spValue;
+    estHp.textContent = hpValue;
+    estSp.textContent = spValue;
     estSpi.textContent = spiValue;
-    estXP.textContent = xpValue;
+    estXp.textContent = xpValue;
   }
 }
 let rafId = null;
