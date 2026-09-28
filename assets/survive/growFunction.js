@@ -115,23 +115,22 @@ const practiceAction = {
   },
 
   // --- 2つ目の訓練（例：筋力系の訓練） ---
-  btnWorkout: {
+  btnATK: {
     isValued: false,
     values: {},
-
     action: function(frame) {
       if (!this.isValued) {
         this.values = {
-          hp: Math.floor(Math.random() * (50 - 30 + 1)) + 30, // 別の上がり幅
-          atk: Math.floor(Math.random() * (5 - 2 + 1)) + 2,
+          atk: Math.floor(Math.random() * (7 - 5 + 1)) + 2,
+          dex: Math.floor(Math.random() * (5 - 3 + 1)) + 2,
+          spi: Math.floor(Math.random() * (2 - 1 + 1)) + 1,
           xp: Math.floor(Math.random() * (200 - 100 + 1)) + 100
         };
         this.isValued = true;
       }
-
-      // 筋力訓練用の数値を表示
-      estHp.textContent = this.values.hp;
       estAtk.textContent = this.values.atk;
+      estDex.textContent = this.values.dex;
+      estSpi.textContent = this.values.spi;
       estXp.textContent = this.values.xp;
     }
   }
