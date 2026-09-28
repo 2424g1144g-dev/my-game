@@ -20,6 +20,7 @@ const pbtn = document.querySelectorAll(".practice-btn-container");
 
 
 
+
 window.surviveStart = async function () {
   console.log("スタート");
   const log = document.getElementById("dialogue");
@@ -92,25 +93,54 @@ let isValuedHealth = false;
 
 
 const practiceAction = {
-  btnHP: (frame) => {
-    console.log("計算中");
-    if (!isValuedHealth) {
-      hpValue = Math.floor(Math.random() * (15 - 10 + 1)) + 10;
-      spValue = Math.floor(Math.random() * (7 - 3 + 1)) + 3;
-      spiValue = Math.floor(Math.random() * (4 - 2 + 1)) + 2;
-      xpValue = Math.floor(Math.random() * (500 - 300 + 1)) + 300;
-      isValued = true;
+  // --- 1つ目の訓練（例：HP系の訓練） ---
+  btnHP: {
+    isValued: false, // このボタン専用の決定フラグ
+    values: {},      // このボタン専用の計算値の保存場所
+    action: function(frame) {
+      if (!this.isValued) {
+        this.values = {
+          hp: Math.floor(Math.random() * (15 - 10 + 1)) + 10,
+          sp: Math.floor(Math.random() * (7 - 3 + 1)) + 3,
+          spi: Math.floor(Math.random() * (4 - 2 + 1)) + 2,
+          xp: Math.floor(Math.random() * (500 - 300 + 1)) + 300
+        };
+        this.isValued = true; // 自分の計算完了フラグを立てる
+      }
+      estHp.textContent = this.values.hp;
+      estSp.textContent = this.values.sp;
+      estSpi.textContent = this.values.spi;
+      estXp.textContent = this.values.xp;
     }
-    estHp.textContent = hpValue;
-    estSp.textContent = spValue;
-    estSpi.textContent = spiValue;
-    estXp.textContent = xpValue;
+  },
+
+  // --- 2つ目の訓練（例：筋力系の訓練） ---
+  btnWorkout: {
+    isValued: false,
+    values: {},
+
+    action: function(frame) {
+      if (!this.isValued) {
+        this.values = {
+          hp: Math.floor(Math.random() * (50 - 30 + 1)) + 30, // 別の上がり幅
+          atk: Math.floor(Math.random() * (5 - 2 + 1)) + 2,
+          xp: Math.floor(Math.random() * (200 - 100 + 1)) + 100
+        };
+        this.isValued = true;
+      }
+
+      // 筋力訓練用の数値を表示
+      estHp.textContent = this.values.hp;
+      estAtk.textContent = this.values.atk;
+      estXp.textContent = this.values.xp;
+    }
   }
-}
+};
+
 let rafId = null;
 let currentAction = null;
 let frameCount = 0;
-let hpUp = 0, spUp = 0, agiUp = 0, intUp = 0, dexUp = 0, spiUp = 0, xpUp = 0;
+
 function updateLoop() {
   frameCount++;
   if (currentAction) currentAction(frameCount);
@@ -120,18 +150,24 @@ function updateLoop() {
 document.querySelectorAll(".practice-btn-container").forEach(btn => {
   btn.addEventListener("mouseenter", (e) => {
     const btnId = e.currentTarget.id;
-    if (practiceAction[btnId]) {
-      currentAction = practiceAction[btnId];
+    const targetObj = practiceAction[btnId];
+    if (targetObj) {
+      // 各ボタンオブジェクト内の action 関数に context (this) をバインドしてセット
+      currentAction = targetObj.action.bind(targetObj);
       frameCount = 0;
       if (rafId) cancelAnimationFrame(rafId);
       rafId = requestAnimationFrame(updateLoop);
     }
   });
+
   btn.addEventListener("mouseleave", () => {
     if (rafId) {
       cancelAnimationFrame(rafId);
       rafId = null;
     }
+    document.querySelectorAll(".est").forEach(est => {
+      est.style.opacity = 0;
+    })
     currentAction = null;
   });
 });
