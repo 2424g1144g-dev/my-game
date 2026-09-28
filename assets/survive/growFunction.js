@@ -88,13 +88,13 @@ const estAgi = document.getElementById("estimateAGI");
 const estInt = document.getElementById("estimateINT");
 const estDex = document.getElementById("estimateDEX");
 const estSpi = document.getElementById("estimateSPI");
-let isValued = false;
+let isValuedHealth = false;
 
 
 const practiceAction = {
-  btnHealth: (frame) => {
+  btnHP: (frame) => {
     console.log("計算中");
-    if (!isValued) {
+    if (!isValuedHealth) {
       hpValue = Math.floor(Math.random() * (15 - 10 + 1)) + 10;
       spValue = Math.floor(Math.random() * (7 - 3 + 1)) + 3;
       spiValue = Math.floor(Math.random() * (4 - 2 + 1)) + 2;
