@@ -117,7 +117,7 @@ function updateLoop() {
   rafId = requestAnimationFrame(updateLoop);
 }
 
-document.querySelectorAll(".diamond-btn-container").forEach(btn => {
+document.querySelectorAll(".practice-btn-container").forEach(btn => {
   btn.addEventListener("mouseenter", (e) => {
     const btnId = e.currentTarget.id;
     if (practiceAction[btnId]) {
