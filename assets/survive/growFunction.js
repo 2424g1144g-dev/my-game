@@ -151,6 +151,9 @@ document.querySelectorAll(".practice-btn-container").forEach(btn => {
   btn.addEventListener("mouseenter", (e) => {
     const btnId = e.currentTarget.id;
     const targetObj = practiceAction[btnId];
+    document.querySelectorAll(".est").forEach(est => {
+      est.style.opacity = 1;
+    });
     if (targetObj) {
       // 各ボタンオブジェクト内の action 関数に context (this) をバインドしてセット
       currentAction = targetObj.action.bind(targetObj);
