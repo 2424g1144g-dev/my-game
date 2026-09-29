@@ -200,7 +200,7 @@ const practiceAction = {
         };
         this.isValued = true;
       }
-      estInt.textContent = this.avlues.int;
+      estInt.textContent = this.values.int;
       estSpi.textContent = this.values.spi;
       estXp.textContent = this.values.xp;
     }
