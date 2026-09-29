@@ -147,10 +147,28 @@ const practiceAction = {
         };
         this.isValued = true;
       }
-    estDef.textContent = this.values.def;
-    estAgi.textContent = this.values.agi;
-    estInt.textContent = this.values.int;
-    estXp.textContent = this.values.xp;
+      estDef.textContent = this.values.def;
+      estAgi.textContent = this.values.agi;
+      estInt.textContent = this.values.int;
+      estXp.textContent = this.values.xp;
+    }
+  },
+
+  btnAGI: {
+    action: function(frame) {
+      if (!this.isValued) {
+        this.values = {
+          hp: Math.floor(Math.random() * (6 - 3 + 1)) + 3,
+          agi: Math.floor(Math.random() * (7 - 5 + 1)) + 5,
+          spi: Math.floor(Math.random() * (2 - 1 + 1)) + 1,
+          xp: Math.floor(Math.random() * (200 - 100 + 1)) + 100
+        };
+        this.isValued = true;
+      }
+      estHP.textContent = this.values.hp;
+      estAGI.textContent = this.values.agi;
+      estSPI.textContent = this.values.spi;
+      estXP.textContent = this.values.xp;
     }
   }
 };
