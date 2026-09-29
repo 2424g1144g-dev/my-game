@@ -165,10 +165,10 @@ const practiceAction = {
         };
         this.isValued = true;
       }
-      estHP.textContent = this.values.hp;
-      estAGI.textContent = this.values.agi;
-      estSPI.textContent = this.values.spi;
-      estXP.textContent = this.values.xp;
+      estHp.textContent = this.values.hp;
+      estAgi.textContent = this.values.agi;
+      estSpi.textContent = this.values.spi;
+      estXp.textContent = this.values.xp;
     }
   }
 };
