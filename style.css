@@ -814,3 +814,11 @@ pointer-events: none;
 .practice-btn-container:hover .diamond-icon {
   transform: translate(-50%, -100px) scale(1.05); 
 }
+
+.est {
+  position: relative;
+  left: -10px;
+  top: -10px;
+  font-size: 13px;
+  color: #009cff;
+}
