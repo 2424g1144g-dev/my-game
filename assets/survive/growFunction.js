@@ -177,14 +177,14 @@ const practiceAction = {
       if (!this.isValued) {
         this.values = {
           int: Math.floor(Math.random() * (7 - 5 + 1)) + 5,
-          dex: Math.floor(Math.random() * (5 - 3 + 1)) + 5,
+          sp: Math.floor(Math.random() * (5 - 3 + 1)) + 5,
           spi: Math.floor(Math.random() * (3 - 1 + 1)) + 3,
           xp: Math.floor(Math.random() * (200 - 100 + 1)) + 100
         };
         this.isValued = true;
       }
       estInt.textContent = this.values.int;
-      estDex.textContent = this.values.dex;
+      estsp.textContent = this.values.sp;
       estSpi.textContent = this.values.spi;
       estXp.textContent = this.values.xp;
     }
