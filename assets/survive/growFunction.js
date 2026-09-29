@@ -186,7 +186,23 @@ const practiceAction = {
       estInt.textContent = this.values.int;
       estDex.textContent = this.values.dex;
       estSpi.textContent = this.values.spi;
-      estXp.textCOntent = this.values.xp;
+      estXp.textContent = this.values.xp;
+    }
+  },
+
+  btnSPI: {
+    action: function(frame) {
+      if (!this.isValued) {
+        this.values = {
+          int: Math.floor(Math.random() * 5 - 3 + 1) + 3,
+          spi: Math.floor(Math.random() * 7 - 5 + 1) + 5,
+          xp: Math.floor(Math.random() * 300 - 200 + 1) + 200
+        };
+        this.isValued = true;
+      }
+      estInt.textContent = this.avlues.int;
+      estSpi.textContent = this.values.spi;
+      estXp.textContent = this.values.xp;
     }
   }
 };
