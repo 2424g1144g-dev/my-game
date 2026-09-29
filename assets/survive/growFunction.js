@@ -120,8 +120,8 @@ const practiceAction = {
     action: function(frame) {
       if (!this.isValued) {
         this.values = {
-          atk: Math.floor(Math.random() * (7 - 5 + 1)) + 2,
-          dex: Math.floor(Math.random() * (5 - 3 + 1)) + 2,
+          atk: Math.floor(Math.random() * (7 - 5 + 1)) + 5,
+          dex: Math.floor(Math.random() * (5 - 3 + 1)) + 3,
           spi: Math.floor(Math.random() * (2 - 1 + 1)) + 1,
           xp: Math.floor(Math.random() * (200 - 100 + 1)) + 100
         };
@@ -131,6 +131,26 @@ const practiceAction = {
       estDex.textContent = this.values.dex;
       estSpi.textContent = this.values.spi;
       estXp.textContent = this.values.xp;
+    }
+  },
+
+  btnDEF: {
+    isValued: false,
+    values: {},
+    action : function(frame) {
+      if (!this.isValued) {
+        this.values = {
+          def: Math.floor(Math.random() * (7 - 5 + 1)) + 5,
+          agi: Math.floor(Math.random() * (2 - 1 + 1)) + 1,
+          int: Math.floor(Math.random() * (5 - 3 + 1)) + 3,
+          xp: Math.floor(Math.random() * (200 - 100 + 1)) + 100
+        };
+        this.isValued = true;
+      }
+    estDef.textContent = this.values.def;
+    estAgi.textContent = this.values.agi;
+    estInt.textContent = this.values.int;
+    estXp.textContent = this.values.xp;
     }
   }
 };
