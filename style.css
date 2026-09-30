@@ -699,6 +699,26 @@ pointer-events: none;
   width: 70%; /* ここの数値（%）を変えるとゲージの量が変わります */
   border-radius: 10px;
   transition: width 0.3s ease;
+  z-index: 1211;
+}
+.gauge-preview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 70%; /* ホバー前は現在のHPと同じ幅にしておく */
+  background-color: rgba(255, 255, 255, 0.7); /* 白の半透明 */
+  border-radius: 10px;
+  transition: width 0.3s ease;
+  z-index: 1210;
+}
+@keyframes previewPulse {
+  0% { opacity: 0.5; }
+  50% { opacity: 0.9; }
+  100% { opacity: 0.5; }
+}
+.gauge-preview.active {
+  animation: previewPulse 1.2s infinite ease-in-out;
 }
 
 #islandStrength {

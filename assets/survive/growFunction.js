@@ -18,6 +18,10 @@ const bottomUI = document.getElementById("trainingBottomCon");
 const btn = document.querySelectorAll(".diamond-btn-container");
 const pbtn = document.querySelectorAll(".practice-btn-container");
 
+const hpFill = document.getElementById("hpFill");
+const hpPreview = document.getElementById("hpPreview");
+let currentHp = 70;
+
 
 
 
@@ -99,6 +103,7 @@ const practiceAction = {
     action: function(frame) {
       if (!this.isValued) {
         this.values = {
+          costHp: Math.floor(Math.random() * (30 - 25 + 1)) + 25,
           hp: Math.floor(Math.random() * (15 - 10 + 1)) + 10,
           sp: Math.floor(Math.random() * (7 - 3 + 1)) + 3,
           spi: Math.floor(Math.random() * (4 - 2 + 1)) + 2,
@@ -106,6 +111,12 @@ const practiceAction = {
         };
         this.isValued = true; // 自分の計算完了フラグを立てる
       }
+      // 1. プレビューバーを現在のHP（70%）にする
+      hpPreview.style.width = `${currentHpPct}%`;
+      hpPreview.classList.add("active"); // 点滅開始
+      // 2. 実ゲージを消費後の値（70 - 30 = 40%）に縮める
+      const afterHp = Math.max(0, currentHpPct - this.values.costHp);
+      hpFill.style.width = `${afterHp}%`;
       estHp.textContent = this.values.hp;
       estSp.textContent = this.values.sp;
       estSpi.textContent = this.values.spi;
@@ -235,6 +246,9 @@ document.querySelectorAll(".practice-btn-container").forEach(btn => {
       cancelAnimationFrame(rafId);
       rafId = null;
     }
+    hpFill.style.width = `${currentHpPct}%`;
+    hpPreview.style.width = `${currentHpPct}%`;
+    hpPreview.classList.remove("active");
     document.querySelectorAll(".est").forEach(est => {
       est.textContent = "";
     })
