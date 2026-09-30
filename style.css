@@ -699,7 +699,6 @@ pointer-events: none;
   width: 70%; /* ここの数値（%）を変えるとゲージの量が変わります */
   border-radius: 10px;
   transition: width 0.3s ease;
-  z-index: 1211;
 }
 .gauge-preview {
   position: absolute;
@@ -710,7 +709,6 @@ pointer-events: none;
   background-color: rgba(255, 255, 255, 0.7); /* 白の半透明 */
   border-radius: 10px;
   transition: width 0.3s ease;
-  z-index: 1210;
 }
 @keyframes previewPulse {
   0% { opacity: 0.5; }
