@@ -112,10 +112,10 @@ const practiceAction = {
         this.isValued = true; // 自分の計算完了フラグを立てる
       }
       // 1. プレビューバーを現在のHP（70%）にする
-      hpPreview.style.width = `${currentHpPct}%`;
+      hpPreview.style.width = `${currentHp}%`;
       hpPreview.classList.add("active"); // 点滅開始
       // 2. 実ゲージを消費後の値（70 - 30 = 40%）に縮める
-      const afterHp = Math.max(0, currentHpPct - this.values.costHp);
+      const afterHp = Math.max(0, currentHp - this.values.costHp);
       hpFill.style.width = `${afterHp}%`;
       estHp.textContent = this.values.hp;
       estSp.textContent = this.values.sp;
@@ -246,8 +246,8 @@ document.querySelectorAll(".practice-btn-container").forEach(btn => {
       cancelAnimationFrame(rafId);
       rafId = null;
     }
-    hpFill.style.width = `${currentHpPct}%`;
-    hpPreview.style.width = `${currentHpPct}%`;
+    hpFill.style.width = `${currentHp}%`;
+    hpPreview.style.width = `${currentHp}%`;
     hpPreview.classList.remove("active");
     document.querySelectorAll(".est").forEach(est => {
       est.textContent = "";
