@@ -21,6 +21,8 @@ const pbtn = document.querySelectorAll(".practice-btn-container");
 const hpFill = document.getElementById("hpFill");
 const hpPreview = document.getElementById("hpPreview");
 let currentHp = 70;
+let maxStamina = 100;
+let currentPct = (currentHP / maxStamina) * 100;
 
 
 
@@ -111,12 +113,12 @@ const practiceAction = {
         };
         this.isValued = true; // 自分の計算完了フラグを立てる
       }
-      // 1. プレビューバーを現在のHP（70%）にする
-      hpPreview.style.width = `${currentHp}%`;
-      hpPreview.classList.add("active"); // 点滅開始
-      // 2. 実ゲージを消費後の値（70 - 30 = 40%）に縮める
-      const afterHp = Math.max(0, currentHp - this.values.costHp);
-      hpFill.style.width = `${afterHp}%`;
+      // 消費後のHP割合（0未満にならないようMath.max）
+      const afterHP = Math.max(0, currentHP - this.values.costHp);
+      const afterPct = (afterHP / maxHP) * 100; // 40%
+      // clip-path で 「afterPct%」 から 「currentPct%」 の間だけを表示
+      // polygon(左上X 左上Y, 右上X 右上Y, 右下X 右下Y, 左下X 左下Y)
+      hpPreview.style.clipPath = `polygon(${afterPct}% 0, ${currentPct}% 0, ${currentPct}% 100%, ${afterPct}% 100%)`;
       estHp.textContent = this.values.hp;
       estSp.textContent = this.values.sp;
       estSpi.textContent = this.values.spi;
@@ -246,9 +248,7 @@ document.querySelectorAll(".practice-btn-container").forEach(btn => {
       cancelAnimationFrame(rafId);
       rafId = null;
     }
-    hpFill.style.width = `${currentHp}%`;
-    hpPreview.style.width = `${currentHp}%`;
-    hpPreview.classList.remove("active");
+    hpPreview.style.clipPath = "polygon(0 0, 0 0, 0 100%, 0 100%)";
     document.querySelectorAll(".est").forEach(est => {
       est.textContent = "";
     })

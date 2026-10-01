@@ -704,11 +704,13 @@ pointer-events: none;
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
   height: 100%;
-  width: 70%; /* ホバー前は現在のHPと同じ幅にしておく */
-  background-color: rgba(255, 255, 255, 0.7); /* 白の半透明 */
-  border-radius: 10px;
-  transition: width 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.7); /* 白半透明 */
+  /* 最初は一切表示しない（全切り抜き） */
+  clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  pointer-events: none;
+  transition: clip-path 0.2s ease-out;
 }
 @keyframes previewPulse {
   0% { opacity: 0.5; }
