@@ -20,7 +20,7 @@ const pbtn = document.querySelectorAll(".practice-btn-container");
 
 const hpFill = document.getElementById("hpFill");
 const hpPreview = document.getElementById("hpPreview");
-let currentHp = 70;
+let currentHP = 70;
 let maxStamina = 100;
 let currentPct = (currentHP / maxStamina) * 100;
 
