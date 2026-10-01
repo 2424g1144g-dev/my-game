@@ -691,6 +691,7 @@ pointer-events: none;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
+  z-index: 1;
 }
 
 /* ゲージの中身（色がついている部分） */
@@ -699,6 +700,7 @@ pointer-events: none;
   width: 70%; /* ここの数値（%）を変えるとゲージの量が変わります */
   border-radius: 10px;
   transition: width 0.3s ease;
+  z-index: 2;
 }
 .gauge-preview {
   position: absolute;
@@ -711,6 +713,7 @@ pointer-events: none;
   clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
   pointer-events: none;
   transition: clip-path 0.2s ease-out;
+  z-index: 3;
 }
 @keyframes previewPulse {
   0% { opacity: 0.5; }
